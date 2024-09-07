@@ -7,6 +7,86 @@
     <meta name="keywords" content="portfolio,developers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kirito</title>
+    <style>
+        body {
+                  font-family: Arial, sans-serif;
+                  color:white;
+                  margin:0;
+                  margin-top: -21px;
+                  padding: 0;
+
+              }
+
+              /* Header and Hero Section Styles */
+              header {
+                  color:white;
+                  background-color: black;
+                  height: 110vh;
+                  position: relative;
+                  text-align: center;
+              }
+
+
+              /* hero introduction */
+              #introduction{
+                  position: absolute;
+                  top: 100px;
+                  left: 200px;
+             }
+             
+              /* Navigation */
+              nav {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  text-align: right;
+              }
+
+              nav a {
+                  margin: 0 15px;
+                  text-decoration: none;
+                  color:white;
+              }
+
+              /* Hero Section */
+              .hero-content {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  text-align: center;
+              }
+
+              .hero-content h1 {
+                  font-size: 2.5rem;
+                  margin: 0;
+              }
+
+              .hero-content h2 {
+                  font-size: 1.5rem;
+                  margin: 10px 0;
+              }
+
+              /* Hero Image */
+              .hero-image {
+                  position: absolute;
+                  bottom: 20px;
+                  left: 50%;
+                  transform: translateX(-50%);
+              }
+
+              .hero-image img {
+                  width: 200px;
+                  height: auto;
+                  border-radius: 50%;
+              }
+
+               /* Logo Section */
+              #logo{
+              position: fixed;
+              top: 15px;
+              }
+    </style>
 </head>
 
 <body>
@@ -14,7 +94,7 @@
 <header>
 
     <!-- Logo Section -->
-    <div>
+    <div id="logo">
         <img src="" alt="Logo" title="logo">
     </div>
 
@@ -31,13 +111,13 @@
 
     <div>
         <!-- Introduction Section -->
-        <div>
+        <div id="introduction">
             <h1>I am Tharindu randika</h1>
             <h2>Software Engineer students - Full stack developer</h2>
         </div>
         <!-- Hero Section Image -->
         <div>
-            <img src="" alt="MY IMAGE" title="myself">
+            <img src="" alt="MY IMAGE" title="myself" >
         </div>
     </div>
 </header>
@@ -275,3 +355,4 @@
 </footer>
 
 </body>
+</html>
