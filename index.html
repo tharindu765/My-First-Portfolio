@@ -6,96 +6,311 @@
     <meta name="description" content="hello this is my first portfolio website">
     <meta name="keywords" content="portfolio,developers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>kirito</title>
     <style>
-        body {
-                  font-family: Arial, sans-serif;
-                  color:white;
-                  margin:0;
-                  margin-top: -21px;
-                  padding: 0;
 
-              }
+        body{
+        background:black;
+        color:white;
+        overflow-x:hidden;
+        }
 
-              /* Header and Hero Section Styles */
-              header {
-                  color:white;
-                  background-color: black;
-                  height: 110vh;
-                  position: relative;
-                  text-align: center;
-              }
+        header{
+        position:absoulte;
+        weight:20pw;
+        height:100vh;
+        display: flex;
+        }
 
+        #headerLine{
+        border-radius:30px;
+            border:2px solid blue;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            }
 
-              /* hero introduction */
-              #introduction{
-                  position: absolute;
-                  top: 100px;
-                  left: 200px;
-             }
-             
-              /* Navigation */
-              nav {
-                  position: fixed;
-                  top: 20px;
-                  right: 20px;
-                  text-align: right;
-              }
-
-              nav a {
-                  margin: 0 15px;
+             nav a {
+                  margin: 0 10px;
                   text-decoration: none;
                   color:white;
               }
 
-              /* Hero Section */
-              .hero-content {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  text-align: center;
-              }
 
-              .hero-content h1 {
-                  font-size: 2.5rem;
-                  margin: 0;
-              }
+            #introduction{
+            position:absolute;
+            top:180px;
+            }
 
-              .hero-content h2 {
-                  font-size: 1.5rem;
-                  margin: 10px 0;
-              }
+            #heroImage{
+            }
 
-              /* Hero Image */
-              .hero-image {
-                  position: absolute;
-                  bottom: 20px;
-                  left: 50%;
-                  transform: translateX(-50%);
-              }
+            #AboutMeDescription{
+            transform:translate(200px,-380px);
+            text-align:center;
+            }
 
-              .hero-image img {
-                  width: 200px;
-                  height: auto;
-                  border-radius: 50%;
-              }
+            #aboutImage{
+            transform:translate(100px,0);
+            }
 
-               /* Logo Section */
-              #logo{
-              position: fixed;
-              top: 15px;
-              }
+            #bottom{
+            transform:translate(750px,-350px);
+            }
+
+
+             .footer {
+             border:2px solid blue;
+                background-color:black;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            .footer-content h5 {
+                margin: 0;
+                font-size: 1rem;
+                opacity: 0.7;
+            }
+
+
+@media (max-width: 575.98px) {
+    #AboutMeDescription {
+        transform: translate(0px, 0px);
+        padding: 10px;
+    }
+
+    #bottom {
+        transform: translate(0px, 0px);
+    }
+
+    .footer-content h5 {
+        font-size: 0.8rem;
+    }
+
+    nav a {
+        display:none;
+    }
+
+    #headerLine {
+        padding: 10px;
+        flex-direction: column;
+    }
+}
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+        #AboutMeDescription {
+            transform: translate(0px, 0px);
+        }
+
+        #bottom {
+            transform: translate(0px, 0px);
+        }
+
+        nav a {
+            margin: 0 8px;
+        }
+
+        .footer-content h5 {
+            font-size: 0.85rem;
+        }
+    }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #AboutMeDescription {
+        transform: translate(100px, -200px);
+    }
+
+    #bottom {
+        transform: translate(500px, -200px);
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .footer-content h5 {
+        font-size: 0.9rem;
+    }
+}
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+    #AboutMeDescription {
+        transform: translate(150px, -250px);
+    }
+
+    #bottom {
+        transform: translate(600px, -300px);
+    }
+
+    .footer-content h5 {
+        font-size: 1rem;
+    }
+}
+        @media (min-width: 1200px) {
+    #AboutMeDescription {
+        transform: translate(200px, -420px);
+    }
+
+    #bottom {
+        transform: translate(700px, -400px);
+    }
+
+  #bendSocial {
+            padding: 10px;
+            transform: translate(120px, 20px);
+        }
+
+
+        #bendSocial img {
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+
+        #bendSocial img:hover {
+            transform: rotate(-0deg) scale(1.2);
+        }
+
+    #Education{
+        box-shadow: 0 8px 20px cyan;
+        width:40vw;
+        transform: translate(600px, -450px);
+    }
+
+
+    .footer-content h5 {
+        font-size: 1.1rem;
+    }
+}
+
+        /* From Uiverse.io by 212004ALJI */
+button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
     </style>
 </head>
 
 <body>
 <!--Hero Header Section -->
-<header>
 
+<div id="headerLine">
     <!-- Logo Section -->
     <div id="logo">
-        <img src="" alt="Logo" title="logo">
+        <img src="assets/images/logo.png" alt="Logo" title="logo" style="width: 125px; height: auto; max-width: 100%;">
     </div>
 
     <!-- Nav Section -->
@@ -106,48 +321,49 @@
         <a href="">Skill</a>
         <a href="">Contact</a>
     </nav>
+</div>
 
+<header>
     <!-- Home Section -->
-
     <div>
         <!-- Introduction Section -->
-        <div id="introduction">
-            <h1>I am Tharindu randika</h1>
-            <h2>Software Engineer students - Full stack developer</h2>
+        <div id="introduction" >
+            <h1 >I am Tharindu randika</h1>
+            <h2 class="animate__animated animate__flip">Software Engineer students - Full stack developer</h2>
         </div>
         <!-- Hero Section Image -->
-        <div>
-            <img src="" alt="MY IMAGE" title="myself" >
+        <div id="heroImage">
+
         </div>
     </div>
 </header>
 
     <!-- About Section -->
-    <main>
+    <main id="aboutSection">
         <!-- About Section Header -->
         <div>
             <h1>About</h1>
         </div>
         <!-- About Section Image -->
         <div>
-            <img src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="myself">
+            <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="myself" style="width: 350px; height: auto; max-width: 100%;  box-shadow: 0 8px 20px cyan; border-radius:100%;">
         </div>
         <!-- About Section Social Icon -->
-        <div>
-            <img src="" alt="instagram" title="instagram">
-            <img src="" alt="FaceBook" title="facebook">
-            <img src="" alt="github" title="github">
-            <img src="" alt="whatsapp" title="whatsapp">
+        <div id="bendSocial">
+            <img src="assets/images/instergram.png" alt="instagram" title="instagram" style="width: 50px; height: auto; max-width: 100%;">
+            <img src="assets/images/facebook.png" alt="FaceBook" title="facebook" style="width: 50px; height: auto; max-width: 100%;">
+            <img src="assets/images/gitgub.png" alt="github" title="github" style="width: 50px; height: auto; max-width: 100%;">
+            <img src="assets/images/whatsapp.png" alt="whatsapp" title="whatsapp" style="width: 50px; height: auto; max-width: 100%;">
         </div>
 
         <!-- About Section Detail -->
-        <div>
-            <p>Hi, I’m Tharindu Randika, an undergraduate Software Engineer passionate about technology, innovation, and solving complex problems.</p>
+        <div id="AboutMeDescription" >
+            <p>Hi, I’m Tharindu Randika,<br> an undergraduate Software Engineer <br>passionate about technology, innovation, and solving complex problems.</p>
         </div>
         <!-- About Section Button -->
-        <div>
-        <button>My CV</button>
-        <button>Hire Me</button>
+        <div id="bottom">
+        <button style="color:blue; front-weight:bold; border:1px solid cyan">My CV</button>
+        <button style="color:blue; front-weight:bold; border:1px solid cyan">Hire Me</button>
         </div>
 
         <!-- About Section More Detail -->
@@ -158,13 +374,14 @@
         </div>
         </div>
 
-        <div>
-            <h2>My Education</h2>
-            <div>
-            <p>Completed O/L at Bolossagama Maha Vidyalaya, A/L at Ganodaya Maha Vidyalaya, and currently pursuing the GDSE program in Software Engineering at IJSE.</p>
-            </div>
+        <div id="Education">
+            <h3>My Education</h3>
+            <ul>
+                <li>Completed Ordinary Level (O/L) at Bolossagama Maha Vidyalaya</li>
+                <li>Completed Advanced Level (A/L) at Ganodaya Maha Vidyalaya</li>
+                <li>Currently pursuing the GDSE program in Software Engineering at IJSE</li>
+            </ul>
         </div>
-
 
     </main>
 
@@ -343,16 +560,20 @@
         <img src="" alt="Whatsapp" title="whatsapp">
     </div>
 
-
 </main>
-
 <!-- Footer Section -->
-<footer>
+<footer class="footer">
     <!-- Footer Section CopyRight -->
-    <div>
-        <h5>CopyRight</h5>
+    <div class="footer-content">
+        <h5>&copy; 2024 My Portfolio. All Rights Reserved.</h5>
     </div>
 </footer>
 
+<!--AOS PLUG-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--AOS INIT-->
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
