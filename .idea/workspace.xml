@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="done header navigation">
-      <change afterPath="$PROJECT_DIR$/assets/images/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gitgub.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/instergram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/whatsapp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
