@@ -1,4 +1,3 @@
-<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,974 +6,252 @@
     <meta name="description" content="hello this is my first portfolio website">
     <meta name="keywords" content="portfolio,developers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <title>kirito</title>
     <style>
 
-        body{
-        background:black;
-        color:white;
-        overflow-x:hidden;
+        * {
+            box-sizing: border-box;
         }
-
-        header{
-        position:absoulte;
-        weight:20pw;
-        height:100vh;
-        display: flex;
-        }
-
-        #headerLine{
-        border-radius:30px;
-            border:2px solid blue;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            }
-
-             nav a {
-                  margin: 0 10px;
-                  text-decoration: none;
-                  color:white;
-              }
-
-
-            #introduction{
-            position:absolute;
-            top:180px;
-            }
-
-            #heroImage{
-            }
-
-            #AboutMeDescription{
-            transform:translate(200px,-380px);
-            text-align:center;
-            }
-
-            #aboutImage{
-            transform:translate(100px,0);
-            }
-
-            #bottom{
-            transform:translate(750px,-350px);
-            }
-
-
-             .footer {
-             border:2px solid blue;
-                background-color:black;
-                color: white;
-                text-align: center;
-                padding: 20px 0;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-            }
-
-            .footer-content h5 {
-                margin: 0;
-                font-size: 1rem;
-                opacity: 0.7;
-            }
-
-
-@media (max-width: 575.98px) {
-        body{
-        overflow-x:hidden;
-
-        }
-
-
-    #AboutMeDescription {
-        transform: none;
-    padding: 10px;
-    margin: 0 auto;
-    }
-
- #bendSocial {
-            padding: 10px;
-            transform: translate(40px, 0px);
-        }
-
-
-   #Education{
-        box-shadow: 0 8px 20px cyan;
-       width: 82vw;
-    height: auto;
-    transform: translate(18px, 0px);
-
-    }
-
-    .footer-content h5 {
-        font-size: 0.8rem;
-    }
-
-    nav a {
-        display:none;
-    }
-
-    #headerLine {
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    #myJourny{
-        display:none;
-        }
-
-    #bottom>button {
-       transform: translate(-742px, 340px);
-         width: 43vw;
-          font-size: 0.7rem;
-          height:5vh;
-       }
-
-    #imageSize{
-    width:280px;
-    transform: translate(-80px, 0px);
-    }
-
-}
-
-        @media (min-width: 576px) and (max-width: 767.98px) {
-        #aboutSection{
-
-        }
-
-        #myJourny{
-        display:none;
-        }
-
-        #AboutMeDescription {
-            transform: translate(0px, 0px);
-        }
-
-        #bottom {
-            transform: translate(120px, 0px);
-        }
-
-            #bendSocial{
-            padding: 10px;
-            transform: translate(170px, 0px);
-        }
-
-   #Education{
-        box-shadow: 0 8px 20px cyan;
-        width:40vw;
-        height:auto;
-        transform: translate(170px, 0px);
-    }
-
-        nav a {
-            margin: 0 8px;
-        }
-
-        .footer-content h5 {
-            font-size: 0.85rem;
-        }
-    }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #AboutMeDescription {
-        transform: translate(150px, -350px);
-        font-size: 0.7rem;
-    }
-
-    #bottom>button {
-        transform: translate(-380px, 0px);
-          width:20vw;
-          font-size: 0.7rem;
-          height:5vh;
-       }
-
-    nav a {
-        margin: 0 10px;
-    }
-
-    .footer-content h5 {
-        font-size: 0.9rem;
-    }
-
-   #Education{
-        box-shadow: 0 8px 20px cyan;
-        width:40vw;
-        height:auto;
-        font-size: 0.7rem;
-        transform: translate(380px, -470px);
-    }
-
-    #aboutImage{
-        transform: translate(20px, 0px);
-    }
-
-    #imageSize{
-    width:280px;
-    }
-
-    #bendSocial{
-            padding: 10px;
-            transform: translate(50px, 0px);
-        }
-
-}
-
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-    #AboutMeDescription {
-        transform: translate(150px, -400px);
-    }
-
-    #bottom {
-        transform: translate(550px, -400px);
-    }
-
-    .footer-content h5 {
-        font-size: 1rem;
-    }
-
-     #Education{
-        box-shadow: 0 8px 20px cyan;
-        width:40vw;
-        transform: translate(490px, -500px);
-    }
-
-    #aboutImage{
-        transform: translate(30px, 0px);
-    }
-
-  #bendSocial {
-            padding: 10px;
-            transform: translate(100px, 0px);
-        }
-}
-
-        @media (min-width: 1200px) {
-    #AboutMeDescription {
-        transform: translate(200px, -450px);
-    }
-
-    #bottom {
-        transform: translate(700px, -450px);
-    }
-
-  #bendSocial {
-            padding: 10px;
-            transform: translate(120px, 0px);
-        }
-
-
-        #bendSocial img {
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-
-
-        #bendSocial img:hover {
-            transform: rotate(-0deg) scale(1.2);
-        }
-
-    #Education{
-        box-shadow: 0 8px 20px cyan;
-        width:40vw;
-        transform: translate(600px, -500px);
-    }
-
-
-    .footer-content h5 {
-        font-size: 1.1rem;
-    }
-}
-
-        /* From Uiverse.io by 212004ALJI */
-button,button::after {
-  padding: 10px 50px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: transparent;
-  position: relative;
-}
-
-button::after {
-  &#45;&#45;move1: inset(50% 50% 50% 50%);
-  &#45;&#45;move2: inset(31% 0 40% 0);
-  &#45;&#45;move3: inset(39% 0 15% 0);
-  &#45;&#45;move4: inset(45% 0 40% 0);
-  &#45;&#45;move5: inset(45% 0 6% 0);
-  &#45;&#45;move6: inset(14% 0 61% 0);
-  clip-path: var(&#45;&#45;move1);
-  content: 'GLITCH';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-}
-
-button:hover::after {
-  animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
-  animation-timing-function: steps(2, end);
-  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
-  background-color: transparent;
-  border: 3px solid rgb(0, 255, 213);
-}
-
-button:hover {
-  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
-}
-
-button:hover {
-  background-color: transparent;
-  border: 1px solid rgb(0, 255, 213);
-  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
-}
-
-@keyframes glitch_4011 {
-  0% {
-    clip-path: var(&#45;&#45;move1);
-    transform: translate(0px,-10px);
-  }
-
-  10% {
-    clip-path: var(&#45;&#45;move2);
-    transform: translate(-10px,10px);
-  }
-
-  20% {
-    clip-path: var(&#45;&#45;move3);
-    transform: translate(10px,0px);
-  }
-
-  30% {
-    clip-path: var(&#45;&#45;move4);
-    transform: translate(-10px,10px);
-  }
-
-  40% {
-    clip-path: var(&#45;&#45;move5);
-    transform: translate(10px,-10px);
-  }
-
-  50% {
-    clip-path: var(&#45;&#45;move6);
-    transform: translate(-10px,10px);
-  }
-
-  60% {
-    clip-path: var(&#45;&#45;move1);
-    transform: translate(10px,-10px);
-  }
-
-  70% {
-    clip-path: var(&#45;&#45;move3);
-    transform: translate(-10px,10px);
-  }
-
-  80% {
-    clip-path: var(&#45;&#45;move2);
-    transform: translate(10px,-10px);
-  }
-
-  90% {
-    clip-path: var(&#45;&#45;move4);
-    transform: translate(-10px,10px);
-  }
-
-  100% {
-    clip-path: var(&#45;&#45;move1);
-    transform: translate(0);
-  }
-}
-
-
-    </style>
-</head>
-
-<body>
-&lt;!&ndash;Hero Header Section &ndash;&gt;
-
-<div id="headerLine">
-    &lt;!&ndash; Logo Section &ndash;&gt;
-    <div id="logo">
-        <img src="assets/images/logo.png" alt="Logo" title="logo" style="width: 125px; height: auto; max-width: 100%;">
-    </div>
-
-    &lt;!&ndash; Nav Section &ndash;&gt;
-    <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Project</a>
-        <a href="">Skill</a>
-        <a href="">Contact</a>
-    </nav>
-</div>
-
-<header>
-    &lt;!&ndash; Home Section &ndash;&gt;
-    <div>
-        &lt;!&ndash; Introduction Section &ndash;&gt;
-        <div id="introduction" >
-            <h1 >I am Tharindu randika</h1>
-            <h2 class="animate__animated animate__flip">Software Engineer students - Full stack developer</h2>
-        </div>
-        &lt;!&ndash; Hero Section Image &ndash;&gt;
-        <div id="heroImage">
-
-        </div>
-    </div>
-</header>
-
-    &lt;!&ndash; About Section &ndash;&gt;
-    <main id="aboutSection">
-        &lt;!&ndash; About Section Header &ndash;&gt;
-        <div>
-            <h1>About</h1>
-        </div>
-        &lt;!&ndash; About Section Image &ndash;&gt;
-        <div id="imageSize">
-            <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="myself" style="width: 350px; height: auto; max-width: 100%;  box-shadow: 0 8px 20px cyan; border-radius:100%;">
-        </div>
-        &lt;!&ndash; About Section Social Icon &ndash;&gt;
-        <div id="bendSocial">
-            <img src="assets/images/instergram.png" alt="instagram" title="instagram" style="width: 50px; height: auto; max-width: 100%;">
-            <img src="assets/images/facebook.png" alt="FaceBook" title="facebook" style="width: 50px; height: auto; max-width: 100%;">
-            <img src="assets/images/gitgub.png" alt="github" title="github" style="width: 50px; height: auto; max-width: 100%;">
-            <img src="assets/images/whatsapp.png" alt="whatsapp" title="whatsapp" style="width: 50px; height: auto; max-width: 100%;">
-        </div>
-
-        &lt;!&ndash; About Section Detail &ndash;&gt;
-        <div id="AboutMeDescription" >
-            <p>Hi, I’m Tharindu Randika,<br> an undergraduate Software Engineer <br>passionate about technology, innovation, and solving complex problems.</p>
-        </div>
-        &lt;!&ndash; About Section Button &ndash;&gt;
-        <div id="bottom">
-        <button style="color:blue; front-weight:bold; border:1px solid cyan">My CV</button>
-        <button style="color:blue; front-weight:bold; border:1px solid cyan">Hire Me</button>
-        </div>
-
-        &lt;!&ndash; About Section More Detail &ndash;&gt;
-        <div id="myJourny">
-            <h2>My Journey</h2>
-        <div >
-            <p>My journey in software engineering began with a fascination for how things work behind the scenes in the digital world. This curiosity drove me to delve into various programming languages and frameworks, and I've since developed a diverse skill set in software development.</p>
-        </div>
-        </div>
-
-        <div id="Education">
-            <h3>My Education</h3>
-            <ul>
-                <li>Completed Ordinary Level (O/L) at Bolossagama Maha Vidyalaya</li>
-                <li>Completed Advanced Level (A/L) at Ganodaya Maha Vidyalaya</li>
-                <li>Currently pursuing the GDSE program in Software Engineering at IJSE</li>
-            </ul>
-        </div>
-
-    </main>
-
-    &lt;!&ndash; Project Section &ndash;&gt;
-    <main>
-        &lt;!&ndash; Project Section Header &ndash;&gt;
-        <div>
-            <h1>Project</h1>
-        </div>
-        &lt;!&ndash; Project Section Cards &ndash;&gt;
-        <section>
-
-            &lt;!&ndash; Card 1 &ndash;&gt;
-            <div>
-                &lt;!&ndash; Card title &ndash;&gt;
-                <div>
-                    <h3>Title</h3>
-                </div>
-                &lt;!&ndash; Card Description &ndash;&gt;
-                <div>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-                </div>
-                &lt;!&ndash; Card Button &ndash;&gt;
-                <div>
-                    <button>View</button>
-                </div>
-            </div>
-            &lt;!&ndash; Card 2 &ndash;&gt;
-            <div>
-                &lt;!&ndash; Card title &ndash;&gt;
-                <div>
-                    <h3>Title</h3>
-                </div>
-                &lt;!&ndash; Card Description &ndash;&gt;
-                <div>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-                </div>
-                &lt;!&ndash; Card Button &ndash;&gt;
-                <div>
-                    <button>View</button>
-                </div>
-            </div>
-            &lt;!&ndash; Card 3 &ndash;&gt;
-            <div>
-                &lt;!&ndash; Card title &ndash;&gt;
-                <div>
-                    <h3>Title</h3>
-                </div>
-                &lt;!&ndash; Card Description &ndash;&gt;
-                <div>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-                </div>
-                &lt;!&ndash; Card Button &ndash;&gt;
-                <div>
-                    <button>View</button>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-&lt;!&ndash; Skill Section &ndash;&gt;
-<main>
-    <div>
-        <h1>Skill</h1>
-    </div>
-    <div>
-        <img src="" alt="Github">
-        <img src="" alt="HTML">
-        <img src="" alt="MySQl">
-        <img src="" alt="Java">
-        <img src="" alt="Python">
-        <img src="" alt="Figma">
-        <img src="" alt="Git">
-    </div>
-</main>
-
-
-&lt;!&ndash; Assignment Section &ndash;&gt;
-<main>
-    <div>
-        <h1>Assignment</h1>
-    </div>
-    &lt;!&ndash; Assignment 1&ndash;&gt;
-    <section>
-        <div>
-            &lt;!&ndash; Card title &ndash;&gt;
-            <div>
-                <h3>Title</h3>
-            </div>
-            &lt;!&ndash; Card Description &ndash;&gt;
-            <div>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-            </div>
-            &lt;!&ndash; Card Button &ndash;&gt;
-            <div>
-                <button>View</button>
-                <button>Github</button>
-            </div>
-        </div>
-    </section>
-    &lt;!&ndash; Assignment 2&ndash;&gt;
-    <section>
-        <div>
-            &lt;!&ndash; Card title &ndash;&gt;
-            <div>
-                <h3>Title</h3>
-            </div>
-            &lt;!&ndash; Card Description &ndash;&gt;
-            <div>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-            </div>
-            &lt;!&ndash; Card Button &ndash;&gt;
-            <div>
-                <button>View</button>
-                <button>Github</button>
-            </div>
-        </div>
-    </section>
-
-    &lt;!&ndash; Assignment 3&ndash;&gt;
-    <section>
-        <div>
-            &lt;!&ndash; Card title &ndash;&gt;
-            <div>
-                <h3>Title</h3>
-            </div>
-            &lt;!&ndash; Card Description &ndash;&gt;
-            <div>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
-            </div>
-            &lt;!&ndash; Card Button &ndash;&gt;
-            <div>
-                <button>View</button>
-                <button>Github</button>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-&lt;!&ndash; Contact Me Section &ndash;&gt;
-<main>
-    <div>
-        <h1>Contact Me</h1>
-    </div>
-    &lt;!&ndash; Contact Me Form Detail Section &ndash;&gt;
-    <section>
-        <form>
-            <label for="Name">Full Name</label><br>
-            <input type="text" id="Name"><br>
-            <label for="Address">Email Address</label><br>
-            <input type="text" id="Address"><br>
-            <label for="Description"></label>Description<br>
-            <input type="text" id="Description"><br>
-            <button>Submit</button>
-            <button>Clear</button>
-        </form>
-    </section>
-
-    &lt;!&ndash; Contact Me Section Image &ndash;&gt;
-    <section>
-        <div>
-            <img src="assets/images/ContactMeSectionImage.png" alt="MYImage" title="Image">
-        </div>
-        <div>
-            <p>Thank you for visiting my portfolio. I am passionate about software engineering and always eager to take on new challenges. Please feel free to reach out for collaborations, opportunities, or just to connect. </p>
-        </div>
-    </section>
-
-    &lt;!&ndash; Contact Me Section Social Icon &ndash;&gt;
-    <div>
-        <img src="" alt="instagram" title="instagram">
-        <img src="" alt="FaceBook" title="facebook">
-        <img src="" alt="Github" title="github">
-        <img src="" alt="Whatsapp" title="whatsapp">
-    </div>
-
-</main>
-&lt;!&ndash; Footer Section &ndash;&gt;
-<footer class="footer">
-    &lt;!&ndash; Footer Section CopyRight &ndash;&gt;
-    <div class="footer-content">
-        <h5>&copy; 2024 My Portfolio. All Rights Reserved.</h5>
-    </div>
-</footer>
-
-&lt;!&ndash;AOS PLUG&ndash;&gt;
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-&lt;!&ndash;AOS INIT&ndash;&gt;
-<script>
-    AOS.init();
-</script>
-</body>
-</html>
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="KIRITO">
-    <meta name="description" content="hello this is my first portfolio website">
-    <meta name="keywords" content="portfolio,developers">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Kirito - Portfolio</title>
-    <style>
         body {
-            background-color: black;
-            color: white;
-            overflow-x: hidden;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-        }
-
-        #headerLine {
-            width: 100%;
-            border-radius: 30px;
-            border: 2px solid blue;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: cyan;
-        }
-
-        #introduction {
-            margin-top: 50px;
-        }
-
-        #heroImage {
-            margin-top: 30px;
-        }
-
-        h1, h2 {
-            margin: 10px 0;
-        }
-
-        h2.animate__animated {
-            animation-duration: 2s;
-        }
-
-        main {
-            padding: 20px;
-            margin-top: 50px;
-        }
-
-        #aboutSection {
-            text-align: center;
-        }
-
-        #aboutSection h1 {
-            margin-bottom: 30px;
-        }
-
-        #imageSize {
-            display: inline-block;
-            margin: 20px;
-        }
-
-        #imageSize img {
-            width: 350px;
-            height: auto;
-            max-width: 100%;
-            box-shadow: 0 8px 20px cyan;
-            border-radius: 100%;
-        }
-
-        #bendSocial {
-            margin-top: 20px;
-        }
-
-        #bendSocial img {
-            width: 50px;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        #bendSocial img:hover {
-            transform: scale(1.2);
-        }
-
-        #AboutMeDescription {
-            margin-top: 30px;
-        }
-
-        #AboutMeDescription p {
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
-            font-size: 1.1rem;
-        }
-
-        #bottom {
-            margin-top: 30px;
-        }
-
-        #bottom button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            border: 2px solid cyan;
-            background-color: transparent;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        #bottom button:hover {
-            border: 3px solid rgb(0, 255, 213);
-            text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
-            box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
-        }
-
-        #Education {
-            margin-top: 50px;
-            box-shadow: 0 8px 20px cyan;
-            padding: 20px 0px;
-            border-radius: 10px;
-            text-align: left;
-            display: inline-block;
-        }
-
-        #Education ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #Education li {
-            margin-bottom: 10px;
-        }
-
-        .footer {
-            margin-top: 50px;
-
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px 0px;
-            width: 100%;
-        }
-
-        .footer-content h5 {
             margin: 0;
-            font-size: 1rem;
-            opacity: 0.7;
+            min-height: 100vh;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
         }
 
-        /* Responsiveness */
-        @media (max-width: 575.98px) {
-            #AboutMeDescription {
-                transform: none;
-                padding: 10px 0px;
-            }
 
-            #Education {
-                width: 100%;
-            }
+        h2,
+        h3,
+        a {
+            color: #34495e;
+        }
 
-            #bottom button {
-                width: 100%;
-                font-size: 0.9rem;
-            }
+        a {
+            text-decoration: none;
+        }
 
-            nav a {
-                display: none;
-            }
 
-            #headerLine {
-                padding: 10px 0px;
+
+        .logo {
+            margin: 0;
+            font-size: 1.45em;
+        }
+
+        .main-nav {
+            margin-top: 5px;
+
+        }
+        .logo a,
+        .main-nav a {
+            padding: 10px 15px;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+        }
+
+        .main-nav a {
+            color: white;
+            font-size: .99em;
+        }
+
+        .main-nav a:hover {
+            color: #718daa;
+        }
+
+                .header {
+            position: fixed; /* Fixed positioning */
+            top: 0; /* Stick to the top of the viewport */
+            width: 100%; /* Occupy the full width of the viewport */
+            z-index: 1000; /* Ensure it's above other content */
+            padding-top: .5em;
+            padding-bottom: .5em;
+            border: 1px solid #a2a2a2;
+            background-color: rgba(0, 0, 0, 0.8);
+            -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+
+        /* =================================
+          Media Queries
+        ==================================== */
+
+        @media (min-width: 769px) {
+            .header,
+            .main-nav {
+                display: flex;
+            }
+            .header {
                 flex-direction: column;
-            }
-        }
-
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            #AboutMeDescription {
-                transform: none;
-            }
-
-            #Education {
+                align-items: center;
+                .header{
                 width: 80%;
+                margin: 0 auto;
+                max-width: 1150px;
             }
-        }
-
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            #AboutMeDescription {
-                transform: translate(0px, 0px);
             }
 
-            #Education {
-                width: 60%;
-            }
         }
 
-        @media (min-width: 992px) {
-            #Education {
-                width: 50%;
+        @media (min-width: 1025px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
             }
+
         }
+
+
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+
+                .wrapper,
+                .content {
+                  position: relative;
+                  width: 100%;
+                  z-index: 1;
+                }
+
+                .content {
+                  overflow-x: hidden;
+                }
+
+                .content .section {
+                  width: 100%;
+                  height: 100vh;
+                }
+
+                .content .section.hero {
+                  background-image: url('assets/images/backgroundImageMan.jpg');
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+
+                .image-container {
+                    width: 100%;
+                    height: 100vh;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 2;
+                    perspective: 500px;
+                    overflow: hidden;
+                }
+
+                .image-container img {
+                    width: 30vw;
+                    height: 30vw;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    display: flex;
+                    justify-content: center;
+                    object-position: center center;
+                    box-shadow: 0 4px 15px rgba(229,229,230,0.5); /* Box shadow */
+                }
+
+                .text-overlay {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    z-index: 3;
+                    text-align: center;
+                }
+
+                .text-overlay h1 {
+                  font-size: 3rem;
+                  margin-bottom: 0.5rem;
+                }
+
+                .text-overlay p {
+                  font-size: 1.5rem;
+                }
+
+                @media only screen and (max-width: 600px) {
+                .image-container {
+                    height: 100vh; /* Adjust height for mobile */
+                }
+
+                .image-container img {
+                    width: 70vw; /* Increase width for mobile */
+                    height: 70vw; /* Increase height for mobile */
+                }
+}
+
+        @media only screen and (max-width: 600px) {
+    .main-nav a {
+         display:none;
+         }
+
     </style>
 </head>
-
 <body>
 
-<!--Header Section-->
-<div id="headerLine">
-    <!-- Logo -->
-    <div id="logo">
-        <img src="assets/images/logo.png" alt="Logo" title="logo" style="width: 125px; height: auto;">
-    </div>
-
-    <!-- Navigation Links -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-        <a href="#">Skill</a>
-        <a href="#">Contact</a>
-    </nav>
-</div>
-
-<!--Hero Section-->
-<header>
-    <div id="introduction">
-        <h1>I am Tharindu Randika</h1>
-        <h2 class="animate__animated animate__flip">Software Engineer Student - Full Stack Developer</h2>
-    </div>
-    <div id="heroImage">
-        <!-- Image content can be placed here later -->
-    </div>
+<header class="header">
+    <h1 class="logo"><a href="assets/images/logo.png">Tharindu</a></h1>
+    <ul class="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Assignment</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 </header>
 
-<!--About Section-->
-<main id="aboutSection">
-    <h1>About</h1>
-    <div id="imageSize">
-        <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="myself">
-    </div>
-    <div id="bendSocial">
-        <img src="assets/images/instergram.png" alt="Instagram" title="Instagram">
-        <img src="assets/images/facebook.png" alt="Facebook" title="Facebook">
-        <img src="assets/images/gitgub.png" alt="GitHub" title="GitHub">
-        <img src="assets/images/whatsapp.png" alt="WhatsApp" title="WhatsApp">
-    </div>
-    <div id="AboutMeDescription">
-        <p>Hi, I’m Tharindu Randika, an undergraduate Software Engineer passionate about technology, innovation, and solving complex problems.</p>
-    </div>
+<div class="wrapper">
 
-    <!--Buttons-->
-    <div id="bottom">
-        <button>My CV</button>
-        <button>Hire Me</button>
+    <div class="content">
+        <section class="section hero"></section>
+        <section class="section gradient-purple"></section>
+        <section class="section gradient-blue"></section>
     </div>
-
-    <!--Education Section-->
-    <div id="Education">
-        <h3>My Education</h3>
-        <ul>
-            <li>Completed Ordinary Level (O/L) at Bolossagama Maha Vidyalaya</li>
-            <li>Completed Advanced Level (A/L) at Ganodaya Maha Vidyalaya</li>
-            <li>Currently pursuing the GDSE program in Software Engineering at IJSE</li>
-        </ul>
-    </div>
-</main>
-
-<!--Footer Section-->
-<div class="footer">
-    <div class="footer-content">
-        <h5>© 2023 Tharindu Randika</h5>
+    <div class="image-container">
+        <img src="assets/images/backgroundImageMan.jpg" alt="image">
+        <div class="text-overlay">
+            <h1>Hi Welcome</h1>
+            <p>I am Tharindu.</p>
+        </div>
     </div>
 </div>
 
+<!-- Add GSAP and ScrollTrigger CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+<script>
+    window.addEventListener("load", () => {
+       gsap.timeline({
+           scrollTrigger: {
+               trigger: ".wrapper",
+               start: "top top",
+               end: "+=100%", // Adjust to control the scroll distance
+               scrub: true,
+               pin: ".wrapper",
+           }
+       })
+       .to("img", {
+           scale: 4,
+           ease: "power1.inOut"
+       });
+    });
+</script>
 </body>
 </html>
