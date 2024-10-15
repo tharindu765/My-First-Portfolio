@@ -1,3 +1,4 @@
+
 /* Media query for small phones (max-width: 480px) */
 @media all and (max-width: 480px) {
     #aboutSection {
@@ -36,11 +37,11 @@
 
     #bottom {
         width:75vw !important;
-        height:20vh;
+        height:auto;
         flex-direction: column !important; /* Stack buttons vertically */
         display:flex !important;
         justify-content:center !important;
-        margin-top: 355px !important; /* Adjust spacing */
+        margin-top: 333px !important; /* Adjust spacing */
         margin-left: 15px !important;
         border:none !important;
     }
@@ -53,7 +54,8 @@
     }
 
     #bendSocial {
-    border:none !important;
+        border:none !important;
+        margin-top: 30px !important;
         margin-left: 0 !important; /* Center social icons */
         gap: 40px !important; /* Reduce gap between icons */
     }
@@ -61,9 +63,64 @@
     #bendSocial img {
         width: 9px !important; /* Increase size of social icons */
     }
-
-
 }
+
+/* Media query for smallest phones (max-width: 320px) */
+@media all and (max-width: 321px) {
+    #aboutSection {
+        padding: 5px !important; /* Smaller padding for tiny screens */
+        text-align: center !important; /* Center text */
+    }
+
+    #imageSize {
+        justify-content: center !important; /* Center image */
+        margin-top: 0 !important;
+    }
+
+    #aboutImage {
+        width: 14vw !important; /* Larger image for smallest screens */
+        height: 9vh !important;
+        margin-left: 0 !important; /* Remove left margin */
+        margin-top: -90px !important;
+    }
+
+    #AboutMeDescription {
+        margin-left: 0 !important; /* Center the description */
+        padding: 0 10px !important; /* Add some padding */
+        margin-top: -100px !important; /* Adjust margin to prevent overlap */
+        width: 90vw !important; /* Ensure it fits the screen */
+        height: auto !important;
+        font-size: 75% !important; /* Smaller font for smallest screens */
+    }
+
+    #bottom {
+        width: 90vw !important; /* Full width for buttons */
+        height: auto !important; /* Remove fixed height */
+        flex-direction: column !important; /* Stack buttons vertically */
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 339px !important;
+        margin-left: 0 !important;
+        border: none !important;
+    }
+
+    #bottom button {
+        left: 14px !important;
+        width: 90% !important; /* Wide buttons */
+        margin: 5px 0 !important; /* Vertical spacing */
+    }
+
+    #bendSocial {
+        margin-left: 0 !important; /* Center social icons */
+        margin-top: 20px !important;
+        gap: 40px !important; /* Reduce gap between icons */
+    }
+
+    #bendSocial img {
+        width: 10px !important; /* Slightly larger social icons for clarity */
+    }
+}
+
 
 /* Media query for medium phones (481px to 768px) */
 @media all and (min-width: 481px) and (max-width: 768px) {

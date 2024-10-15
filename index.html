@@ -23,14 +23,17 @@
 
     /* Media query for small phones (up to 320px) */
     @media all and (max-width: 320px) {
+
         .header {
             flex-direction: column; /* Stacked layout */
             align-items: center; /* Center align */
         }
 
         .image-container {
-            width:70vw;
-            height: 70vw; /* Full height */
+            display:flex;
+            justify-content:center;
+            width:100%;
+            height: 100vh; /* Full height */
         }
 
         .image-container img {
