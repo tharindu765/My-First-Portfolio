@@ -1,6 +1,6 @@
 
 /* Media query for small phones (max-width: 480px) */
-@media all and (max-width: 480px) {
+@media all and (min-width: 480px) {
     #aboutSection {
         padding: 10px; /* Reduce padding for small screens */
         text-align: center; /* Center text for better readability */
@@ -66,7 +66,7 @@
 }
 
 /* Media query for smallest phones (max-width: 320px) */
-@media all and (max-width: 321px) {
+@media all and (min-width: 321px) {
     #aboutSection {
         padding: 5px !important; /* Smaller padding for tiny screens */
         text-align: center !important; /* Center text */
