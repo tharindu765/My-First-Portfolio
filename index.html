@@ -13,53 +13,55 @@
 </head>
 <style>
 
-                /* =================================
-                  Media Queries
-                ==================================== */
+    /* =================================
+Media Queries
+==================================== */
 
-                @media (min-width: 769px) {
-                    .header,
-                    .main-nav {
-                        display: flex;
-                    }
-                    .header {
-                        flex-direction: column;
-                        align-items: center;
-                        .header{
-                        width: 80%;
-                        margin: 0 auto;
-                        max-width: 1150px;
-                    }
-                    }
+/* Media query for screens 769px and above - sets header to column layout and centers content */
+@media (min-width: 769px) {
+.header,
+.main-nav {
+   display: flex;
+}
+.header {
+   flex-direction: column;
+   align-items: center;
+   .header {
+       width: 80%;
+       margin: 0 auto;
+       max-width: 1150px;
+   }
+}
+}
 
-                }
+/* Media query for screens 1025px and above - sets header to row layout and spaces content */
+@media (min-width: 1025px) {
+.header {
+   flex-direction: row;
+   justify-content: space-between;
+}
 
-                @media (min-width: 1025px) {
-                    .header {
-                        flex-direction: row;
-                        justify-content: space-between;
-                    }
+}
 
-                }
+/* Media query for screens 600px and below - adjusts image-container height and image size */
+@media only screen and (max-width: 600px) {
+.image-container {
+   height: 100vh;
+}
 
-                @media only screen and (max-width: 600px) {
-                .image-container {
-                    height: 100vh;
-                }
+.image-container img {
+   width: 70vw;
+   height: 70vw;
+}
+}
 
-                .image-container img {
-                    width: 70vw;
-                    height: 70vw;
-                }
-           }
+/* Media query for screens 600px and below - hides navigation links */
+@media only screen and (max-width: 600px) {
+.main-nav a {
+   display: none;
+}
+}
 
-
-            @media only screen and (max-width: 600px) {
-            .main-nav a {
-             display:none;
-             }
-
-    }
 
 </style>
 <body>
@@ -91,7 +93,7 @@
 
                 <!-- About Section Image -->
                 <div id="imageSize" style="display:flex; justify-content:flex-start; z-index:100;">
-                    <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="Myself" style="width: 9vw; height: auto; box-shadow: 0 8px 20px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px; z-index:100;">
+                    <img id="aboutImage" src="assets/images/ContactMeSectionImage.png" alt="Myself" title="Myself" style="width: 7vw; height: auto; box-shadow: 0 8px 20px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px; z-index:100;">
                 </div>
 
                 <!-- About Section Description -->
