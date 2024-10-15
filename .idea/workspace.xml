@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing">
-      <change afterPath="$PROJECT_DIR$/assets/images/backgroundImageMan.jpg" afterDir="false" />
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 3Portfolio design">
+      <change afterPath="$PROJECT_DIR$/assets/images/backgroundCheckAboutForPage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/backgroundCheckForAboutPage2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/backgroundForAboutPage3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/Hero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/Nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tempory3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -33,16 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kirito/IdeaProjects/myPortfolio/assets/images"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kirito/IdeaProjects/myPortfolio/assets/images&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images" />
@@ -90,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726756146223</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="testing 3Portfolio design">
+      <option name="closed" value="true" />
+      <created>1728905970948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728905970965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +123,7 @@
     <MESSAGE value="make responsive about section" />
     <MESSAGE value="make up little loose" />
     <MESSAGE value="testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing" />
+    <MESSAGE value="testing 3Portfolio design" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing 3Portfolio design" />
   </component>
 </project>

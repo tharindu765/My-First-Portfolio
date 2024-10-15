@@ -6,203 +6,62 @@
     <meta name="description" content="hello this is my first portfolio website">
     <meta name="keywords" content="portfolio,developers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/Nav.css">
+    <link rel="stylesheet" href="assets/style/Hero.css">
+    <link rel="stylesheet" href="assets/style/about.css">
     <title>kirito</title>
-    <style>
+</head>
+<style>
 
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            min-height: 100vh;
-        }
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-        }
+                /* =================================
+                  Media Queries
+                ==================================== */
 
+                @media (min-width: 769px) {
+                    .header,
+                    .main-nav {
+                        display: flex;
+                    }
+                    .header {
+                        flex-direction: column;
+                        align-items: center;
+                        .header{
+                        width: 80%;
+                        margin: 0 auto;
+                        max-width: 1150px;
+                    }
+                    }
 
-        h2,
-        h3,
-        a {
-            color: #34495e;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-
-
-        .logo {
-            margin: 0;
-            font-size: 1.45em;
-        }
-
-        .main-nav {
-            margin-top: 5px;
-
-        }
-        .logo a,
-        .main-nav a {
-            padding: 10px 15px;
-            text-transform: uppercase;
-            text-align: center;
-            display: block;
-        }
-
-        .main-nav a {
-            color: white;
-            font-size: .99em;
-        }
-
-        .main-nav a:hover {
-            color: #718daa;
-        }
-
-                .header {
-            position: fixed; /* Fixed positioning */
-            top: 0; /* Stick to the top of the viewport */
-            width: 100%; /* Occupy the full width of the viewport */
-            z-index: 1000; /* Ensure it's above other content */
-            padding-top: .5em;
-            padding-bottom: .5em;
-            border: 1px solid #a2a2a2;
-            background-color: rgba(0, 0, 0, 0.8);
-            -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-        }
-
-
-        /* =================================
-          Media Queries
-        ==================================== */
-
-        @media (min-width: 769px) {
-            .header,
-            .main-nav {
-                display: flex;
-            }
-            .header {
-                flex-direction: column;
-                align-items: center;
-                .header{
-                width: 80%;
-                margin: 0 auto;
-                max-width: 1150px;
-            }
-            }
-
-        }
-
-        @media (min-width: 1025px) {
-            .header {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-        }
-
-
-                * {
-                  margin: 0;
-                  padding: 0;
-                  box-sizing: border-box;
                 }
 
-                .wrapper,
-                .content {
-                  position: relative;
-                  width: 100%;
-                  z-index: 1;
-                }
+                @media (min-width: 1025px) {
+                    .header {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
 
-                .content {
-                  overflow-x: hidden;
-                }
-
-                .content .section {
-                  width: 100%;
-                  height: 100vh;
-                }
-
-                .content .section.hero {
-                  background-image: url('assets/images/backgroundImageMan.jpg');
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                }
-
-                .image-container {
-                    width: 100%;
-                    height: 100vh;
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    z-index: 2;
-                    perspective: 500px;
-                    overflow: hidden;
-                }
-
-                .image-container img {
-                    width: 30vw;
-                    height: 30vw;
-                    border-radius: 100%;
-                    object-fit: cover;
-                    display: flex;
-                    justify-content: center;
-                    object-position: center center;
-                    box-shadow: 0 4px 15px rgba(229,229,230,0.5); /* Box shadow */
-                }
-
-                .text-overlay {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    color: white;
-                    z-index: 3;
-                    text-align: center;
-                }
-
-                .text-overlay h1 {
-                  font-size: 3rem;
-                  margin-bottom: 0.5rem;
-                }
-
-                .text-overlay p {
-                  font-size: 1.5rem;
                 }
 
                 @media only screen and (max-width: 600px) {
                 .image-container {
-                    height: 100vh; /* Adjust height for mobile */
+                    height: 100vh;
                 }
 
                 .image-container img {
-                    width: 70vw; /* Increase width for mobile */
-                    height: 70vw; /* Increase height for mobile */
+                    width: 70vw;
+                    height: 70vw;
                 }
-}
+           }
 
-        @media only screen and (max-width: 600px) {
-    .main-nav a {
-         display:none;
-         }
 
-    </style>
-</head>
+            @media only screen and (max-width: 600px) {
+            .main-nav a {
+             display:none;
+             }
+
+    }
+
+</style>
 <body>
 
 <header class="header">
@@ -216,12 +75,56 @@
     </ul>
 </header>
 
+
 <div class="wrapper">
 
     <div class="content">
+        <!--hero section-->
         <section class="section hero"></section>
-        <section class="section gradient-purple"></section>
-        <section class="section gradient-blue"></section>
+        <!--About section-->
+        <section class="section gradient-purple" style="background:black; color:white; display:flex; justify-content:center; padding: 20px; background-image:url(assets/images/backgroundForAboutPage3.jpg);">
+            <main id="aboutSection">
+                <!-- About Section Header -->
+                <div style="text-align: center;">
+                    <h1>About Me</h1>
+                </div>
+
+                <!-- About Section Image -->
+                <div id="imageSize" style="display:flex; justify-content:flex-start; z-index:100;">
+                    <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="Myself" style="width: 9vw; height: auto; box-shadow: 0 8px 20px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px; z-index:100;">
+                </div>
+
+                <!-- About Section Description -->
+                <div id="AboutMeDescription" style="text-align: center; margin-top: -50px; border:2px solid red; box-shadow: 10px 10px 20px red;">
+                    <p style=" margin-left:500px;">Hi, I’m <strong>Tharindu Randika</strong>, 21 years old.<br>
+                        I'm an undergraduate Software Engineer passionate about technology, innovation, and solving problems.<br>
+                        Currently, I’m pursuing my degree in Software Engineering and expanding my knowledge in development and tech.</p>
+                </div>
+
+                <!-- About Section Buttons -->
+                <div id="bottom" style="width:100vw; display: flex; justify-content: center; margin-top: 80px; margin-left:0px; border:2px solid red; box-shadow: 10px 10px 20px red; z-index:1000;">
+                    <button style="color: blue; font-weight: bold; border: 1px solid cyan; padding: 10px 15px; margin-right: 10px; position:relative; left:350px">My CV</button>
+                    <button style="color: blue; font-weight: bold; border: 1px solid cyan; padding: 10px 15px; position:relative; left:150px">Hire Me</button>
+                </div>
+
+        <!-- About Section Social Icons -->
+                <div id="bendSocial" style="display:flex; justify-content:center; margin-top:50px; margin-left:500px; gap:40px; border:2px solid red; box-shadow: 10px 10px 20px red;">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/images/instergram.png" alt="Instagram" title="Instagram" style="width: 10px; height: auto; max-width: 100%; ">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/images/facebook.png" alt="Facebook" title="Facebook" style="width: 10px; height: auto; max-width: 100%;">
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="assets/images/gitgub.png" alt="GitHub" title="GitHub" style="width: 10px; height: auto; max-width: 100%;">
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="assets/images/whatsapp.png" alt="WhatsApp" title="WhatsApp" style="width: 10px; height: auto; max-width: 100%;">
+                    </a>
+                </div>
+            </main>
+        </section>
+        <section  class="section gradient-blue"></section>
     </div>
     <div class="image-container">
         <img src="assets/images/backgroundImageMan.jpg" alt="image">
@@ -252,6 +155,17 @@
            ease: "power1.inOut"
        });
     });
+
+    window.addEventListener("load", () => {
+    gsap.to("#aboutImage", {
+        y: -20, // Moves the image 20px up
+        duration: 1.5, // 1.5 seconds per animation loop
+        ease: "power1.inOut", // Smooth easing
+        repeat: -1, // Infinite loop
+        yoyo: true // Make the animation reverse
+    });
+});
+
 </script>
 </body>
 </html>

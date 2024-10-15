@@ -1,0 +1,41 @@
+/* For small screens (mobile phones) */
+@media (max-width: 768px) {
+    #aboutSection {
+
+    }
+
+    #imageSize img {
+
+    }
+
+    #AboutMeDescription {
+    display:none;
+    }
+
+
+
+    #bendSocial {
+    display:none;
+    }
+}
+
+/* For tablets and small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #aboutSection {
+    }
+
+    #imageSize img {
+    }
+
+    #AboutMeDescription {
+     display:none;
+    }
+
+    #bottom {
+     display:none;
+    }
+
+    #bendSocial {
+     display:none;
+    }
+}
