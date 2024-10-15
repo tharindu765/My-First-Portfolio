@@ -12,55 +12,107 @@
     <title>kirito</title>
 </head>
 <style>
-
     /* =================================
-Media Queries
-==================================== */
+    Media Queries
+    ==================================== */
 
-/* Media query for screens 769px and above - sets header to column layout and centers content */
-@media (min-width: 769px) {
-.header,
-.main-nav {
-   display: flex;
-}
-.header {
-   flex-direction: column;
-   align-items: center;
-   .header {
-       width: 80%;
-       margin: 0 auto;
-       max-width: 1150px;
+    /* Base styles for mobile devices (default) */
+    body {
+        /* Default styles here */
+    }
+
+    /* Media query for small phones (up to 320px) */
+    @media all and (max-width: 320px) {
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for medium phones (321px to 480px) */
+    @media all and (min-width: 321px) and (max-width: 480px) {
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+                    display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for large phones (481px to 768px) */
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for tablets (769px to 1024px) */
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+        .header {
+            flex-direction: column; /* Stack on smaller tablets */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+             width:40vw;
+             height: 40vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
    }
-}
-}
 
-/* Media query for screens 1025px and above - sets header to row layout and spaces content */
-@media (min-width: 1025px) {
-.header {
-   flex-direction: row;
-   justify-content: space-between;
-}
+        /* Media query for desktops (1025px and above) */
+        @media all and (min-width: 1025px) {
+            .header {
+                display: flex; /* Ensure header is a flex container */
+                flex-direction: row; /* Row layout for header */
+                justify-content: space-between; /* Space between header elements */
+                align-items: center; /* Align items vertically */
+            }
 
-}
+            .main-nav {
+                display: flex; /* Ensure nav is a flex container */
+                justify-content: flex-end; /* Align nav items to the right */
+            }
 
-/* Media query for screens 600px and below - adjusts image-container height and image size */
-@media only screen and (max-width: 600px) {
-.image-container {
-   height: 100vh;
-}
+            .main-nav a {
+                margin-left: 20px; /* Optional: space between nav links */
+            }
 
-.image-container img {
-   width: 70vw;
-   height: 70vw;
-}
-}
-
-/* Media query for screens 600px and below - hides navigation links */
-@media only screen and (max-width: 600px) {
-.main-nav a {
-   display: none;
-}
-}
+        }
 
 
 </style>
@@ -93,7 +145,7 @@ Media Queries
 
                 <!-- About Section Image -->
                 <div id="imageSize" style="display:flex; justify-content:flex-start; z-index:100;">
-                    <img id="aboutImage" src="assets/images/ContactMeSectionImage.png" alt="Myself" title="Myself" style="width: 7vw; height: auto; box-shadow: 0 8px 20px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px; z-index:100;">
+                    <img id="aboutImage" src="assets/images/ContactMeSectionImage.png" alt="Myself" title="Myself" style="width: 7vw; height: auto; box-shadow: 0 8px 10px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px; z-index:100;">
                 </div>
 
                 <!-- About Section Description -->

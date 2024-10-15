@@ -1,41 +1,192 @@
-/* For small screens (mobile phones) */
-@media (max-width: 768px) {
+/* Media query for small phones (max-width: 480px) */
+@media all and (max-width: 480px) {
     #aboutSection {
-
+        padding: 10px; /* Reduce padding for small screens */
+        text-align: center; /* Center text for better readability */
     }
 
-    #imageSize img {
-
+    #imageSize {
+        justify-content: center; /* Center image */
+        margin-top: 0px; /* Adjust image margin */
     }
+
+    #aboutImage {
+        width: 12vw !important;/* Make the image larger for small screens */
+        height:8vh !important;
+        margin-left: 127px !important; /* Remove left margin */
+        margin-top:-75px;
+    }
+
 
     #AboutMeDescription {
-    display:none;
+    border:none !important;
+        position:relative;
+        margin: auto; /* Center the description */
+        padding: 0 0px; /* Add some padding */
+        top:320px;
+        width:80vw;
+        height:20vh;
+        font-size: 80%;
     }
 
-
-
-    #bendSocial {
-    display:none;
-    }
-}
-
-/* For tablets and small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #aboutSection {
-    }
-
-    #imageSize img {
-    }
-
-    #AboutMeDescription {
-     display:none;
+    #AboutMeDescription p {
+    position:relative;
+    margin-left: 0 !important;
     }
 
     #bottom {
-     display:none;
+        width:75vw !important;
+        height:20vh;
+        flex-direction: column !important; /* Stack buttons vertically */
+        display:flex !important;
+        justify-content:center !important;
+        margin-top: 355px !important; /* Adjust spacing */
+        margin-left: 15px !important;
+        border:none !important;
+    }
+
+    #bottom button {
+        left: 25px !important;
+        width: 80% !important; /* Make buttons wider */
+        margin: 5px 0 !important; /* Space buttons vertically */
+
     }
 
     #bendSocial {
-     display:none;
+    border:none !important;
+        margin-left: 0 !important; /* Center social icons */
+        gap: 40px !important; /* Reduce gap between icons */
+    }
+
+    #bendSocial img {
+        width: 9px !important; /* Increase size of social icons */
+    }
+
+
+}
+
+/* Media query for medium phones (481px to 768px) */
+@media all and (min-width: 481px) and (max-width: 768px) {
+    #aboutSection {
+        padding: 15px; /* Moderate padding for medium screens */
+        text-align: center; /* Center text */
+    }
+
+    #imageSize {
+        justify-content: center; /* Center image */
+    }
+
+    #aboutImage {
+        width: 40vw; /* Adjust image size */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    #AboutMeDescription {
+        position:relative;
+        margin-left: -490px; /* Center the description */
+
+        margin-top: -193px;
+    }
+
+    #bottom {
+        flex-direction: row; /* Keep buttons in a row */
+        justify-content: center; /* Center buttons */
+    }
+
+    #bottom button {
+        width: 45%; /* Adjust button width */
+        margin: 5px; /* Space buttons */
+    }
+
+    #bendSocial {
+        margin-left: 0; /* Center social icons */
+        gap: 25px; /* Moderate gap between icons */
+    }
+
+    #bendSocial img {
+        width: 25px; /* Adjust size of social icons */
+    }
+}
+
+/* Media query for tablets (769px to 1024px) */
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    #aboutSection {
+        padding: 20px; /* More padding for larger screens */
+        text-align: center; /* Center text */
+    }
+
+    #imageSize {
+        justify-content: center; /* Center image */
+    }
+
+    #aboutImage {
+        width: 10vw; /* Adjust image size */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    #AboutMeDescription {
+        margin-left: 0; /* Center the description */
+        padding: 0 30px; /* Add padding */
+    }
+
+    #bottom {
+        flex-direction: row; /* Keep buttons in a row */
+        justify-content: center; /* Center buttons */
+        gap:200px;
+    }
+
+    #bottom button {
+        width: 20%; /* Adjust button width */
+        margin: 5px; /* Space buttons */
+    }
+
+    #bendSocial {
+        margin-left: 0; /* Center social icons */
+        gap: 30px; /* Moderate gap between icons */
+    }
+
+    #bendSocial img {
+        width: 25px; /* Adjust size of social icons */
+    }
+}
+
+/* Media query for desktops (1025px and above) */
+@media all and (min-width: 1025px) {
+    #aboutSection {
+        padding: 20px; /* Padding for larger screens */
+
+    }
+
+    #imageSize {
+        justify-content: flex-start; /* Align image left */
+    }
+
+    #aboutImage {
+        width: 7vw; /* Maintain image size */
+        margin-left: 200px; /* Original margin */
+    }
+
+    #AboutMeDescription {
+        margin-left: 0px; /* Original margin */
+        padding: 0; /* No padding */
+    }
+
+    #bottom {
+        width: 100vw; /* Full width for buttons */
+        justify-content: center; /* Center buttons */
+    }
+
+    #bottom button {
+        width: auto; /* Original button width */
+        margin: 5px; /* Space buttons */
+    }
+
+    #bendSocial {
+        margin-left: 500px; /* Original margin for social icons */
+        gap: 40px; /* Original gap */
+    }
+
+    #bendSocial img {
+        width: 10px; /* Original size of social icons */
     }
 }

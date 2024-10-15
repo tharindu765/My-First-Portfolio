@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="KIRITO">
+    <meta name="description" content="hello this is my first portfolio website">
+    <meta name="keywords" content="portfolio,developers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>kirito</title>
+
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* =================================
+          Media Queries for Responsive Design
+        ==================================== */
+
+        /* For small screens (mobile phones) */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .main-nav {
+                display: none; /* Hide nav on mobile */
+            }
+
+            .image-container img {
+                width: 70vw;
+                height: 70vw;
+            }
+
+            #aboutImage {
+                width: 60vw; /* Adjust image size for mobile */
+                margin-left: 0; /* Center image */
+                top: 0; /* Remove the top positioning */
+            }
+
+            #AboutMeDescription {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            #bottom {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            #bendSocial {
+                margin-left: 0;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
+        /* For tablets and small desktops */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .main-nav a {
+                display: block;
+            }
+
+            #aboutImage {
+                width: 30vw;
+                top: 0;
+                margin-left: 0;
+            }
+
+            #AboutMeDescription {
+                margin-left: 0;
+            }
+
+            #bottom {
+                gap: 15px;
+            }
+
+            #bendSocial {
+                margin-left: 0;
+                gap: 20px;
+            }
+        }
+
+        /* For larger screens (desktops) */
+        @media (min-width: 1025px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            #aboutImage {
+                width: 9vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo"><a href="#">Tharindu</a></h1>
+    <ul class="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Assignment</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+<div class="wrapper">
+
+    <div class="content">
+        <!--hero section-->
+        <section class="section hero"></section>
+
+        <!-- About section -->
+        <section class="section gradient-purple" style="background:black; color:white; display:flex; justify-content:center; padding: 20px; background-image:url(assets/images/backgroundForAboutPage3.jpg);">
+            <main id="aboutSection">
+                <!-- About Section Header -->
+                <div style="text-align: center;">
+                    <h1>About Me</h1>
+                </div>
+
+                <!-- About Section Image -->
+                <div id="imageSize" style="display:flex; justify-content:flex-start;">
+                    <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="Myself" style="width: 9vw; height: auto; box-shadow: 0 8px 20px red; border-radius: 50%; position:relative; top: 160px; margin-left:200px;">
+                </div>
+
+                <!-- About Section Description -->
+                <div id="AboutMeDescription" style="text-align: center; margin-top: -50px; border:2px solid red; box-shadow: 10px 10px 20px red;">
+                    <p style="margin-left:500px;">Hi, I’m <strong>Tharindu Randika</strong>, 21 years old.<br>
+                        I'm an undergraduate Software Engineer passionate about technology, innovation, and solving problems.<br>
+                        Currently, I’m pursuing my degree in Software Engineering and expanding my knowledge in development and tech.</p>
+                </div>
+
+                <!-- About Section Buttons -->
+                <div id="bottom" style="width:100vw; display: flex; justify-content: center; margin-top: 80px; margin-left:0px; border:2px solid red; box-shadow: 10px 10px 20px red;">
+                    <button style="color: blue; font-weight: bold; border: 1px solid cyan; padding: 10px 15px; margin-right: 10px; position:relative; left:350px">My CV</button>
+                    <button style="color: blue; font-weight: bold; border: 1px solid cyan; padding: 10px 15px; position:relative; left:150px">Hire Me</button>
+                </div>
+
+                <!-- About Section Social Icons -->
+                <div id="bendSocial" style="display:flex; justify-content:center; margin-top:50px; gap:40px; border:2px solid red; box-shadow: 10px 10px 20px red;">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/images/instergram.png" alt="Instagram" title="Instagram" style="width: 10px;">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/images/facebook.png" alt="Facebook" title="Facebook" style="width: 10px;">
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="assets/images/gitgub.png" alt="GitHub" title="GitHub" style="width: 10px;">
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="assets/images/whatsapp.png" alt="WhatsApp" title="WhatsApp" style="width: 10px;">
+                    </a>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <div class="image-container">
+        <img src="assets/images/backgroundImageMan.jpg" alt="image">
+        <div class="text-overlay">
+            <h1>Hi Welcome</h1>
+            <p>I am Tharindu.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Add GSAP and ScrollTrigger CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+<script>
+    window.addEventListener("load", () => {
+       gsap.timeline({
+           scrollTrigger: {
+               trigger: ".wrapper",
+               start: "top top",
+               end: "+=100%",
+               scrub: true,
+               pin: ".wrapper",
+           }
+       })
+       .to("img", {
+           scale: 4,
+           ease: "power1.inOut"
+       });
+    });
+
+    window.addEventListener("load", () => {
+    gsap.to("#aboutImage", {
+        y: -20,
+        duration: 1.5,
+        ease: "power1.inOut",
+        repeat: -1,
+        yoyo: true
+    });
+});
+</script>
+
+</body>
+</html>
