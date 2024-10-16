@@ -1,0 +1,93 @@
+/* Assignment Section Styling */
+#assignmentSection {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color:white;
+}
+
+.assignment-content {
+    text-align: center; /* Center the header */
+}
+
+.assignment-header h1 {
+    margin-bottom: 20px;
+}
+
+/* Container for Assignment Cards */
+.assignment-card-container {
+    display: flex; /* Use flex to align cards in a row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px; /* Padding around the container */
+    border: 2px solid red; /* Border around the rectangle */
+    border-radius: 10px; /* Rounded corners */
+    background-color: black; /* Background for the rectangle */
+    width: 50vw;
+    gap: 20px;
+}
+
+/* Individual assignment card styling */
+.assignment-card {
+    background-color:       #f8f9fa; /* Card background color */
+    border: 1px solid #ddd; /* Light border for cards */
+    padding: 15px;
+    color:black;
+    margin-right: 10px; /* Space between cards */
+    min-width: 200px; /* Minimum width for cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Prevent overflow of text */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: space-between; /* Space out content */
+}
+
+/* Card title styling */
+.card-title h3 {
+    font-size: 1.2rem; /* Title font size */
+    margin-bottom: 5px; /* Space below title */
+}
+
+/* Card description styling */
+.card-description h5 {
+    font-size: 0.9rem; /* Smaller font for description */
+    margin-bottom: 10px; /* Space below description */
+    overflow: hidden; /* Prevent overflow of text */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+    display: -webkit-box; /* Use flexbox for text */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    -webkit-line-clamp: 5; /* Limit to 5 lines */
+    white-space: normal; /* Allow text wrapping */
+}
+
+/* Button container styling */
+.card-buttons {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    margin-top: auto; /* Push buttons to the bottom */
+}
+
+/* Button styling */
+button {
+    padding: 8px 12px; /* Padding for buttons */
+    font-size: 0.9rem; /* Button font size */
+    background-color: #007bff; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .assignment-card {
+        min-width: 150px; /* Smaller cards on smaller screens */
+    }
+}

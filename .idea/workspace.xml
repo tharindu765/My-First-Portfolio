@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 13th About responsive">
-      <change afterPath="$PROJECT_DIR$/assets/style/Project.css" afterDir="false" />
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 1 Project section">
+      <change afterPath="$PROJECT_DIR$/assets/style/Assignment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/about1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/about1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Hero.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729061421403</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="testing 1 Project section">
+      <option name="closed" value="true" />
+      <created>1729063124169</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729063124169</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +243,7 @@
     <MESSAGE value="testing 11th design" />
     <MESSAGE value="testing 12th About responsive" />
     <MESSAGE value="testing 13th About responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 13th About responsive" />
+    <MESSAGE value="testing 1 Project section" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing 1 Project section" />
   </component>
 </project>
