@@ -1,6 +1,6 @@
 /* Project Section */
 .section.gradient-blue {
-  background-color: #1e3a8a; /* Blue gradient background */
+  background-color: #948fc5; /* Blue gradient background */
   color: white;
   padding: 50px;
 }
@@ -20,7 +20,7 @@
 
 /* Project Card Styling */
 .section.gradient-blue main section div {
-  background-color: #2d4aaf; /* Card background color */
+  background-color: #948fc5; /* Card background color */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
