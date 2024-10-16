@@ -16,6 +16,11 @@
   margin-bottom: 20px;
 }
 
+#aboutSection .header-container h1 {
+font-size: 2.5rem;
+
+}
+
 #aboutSection .image-container {
   display: flex;
   justify-content: center;

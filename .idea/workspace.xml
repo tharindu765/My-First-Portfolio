@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 1 Assignment section">
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="color check">
+      <change afterPath="$PROJECT_DIR$/assets/images/white-figma-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/white-github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/white-html-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/white-java-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/white-mysql-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/white-python-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/Skill.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/Assignment.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Assignment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/about1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/about1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729070599738</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="color check">
+      <option name="closed" value="true" />
+      <created>1729072939722</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729072939722</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +268,7 @@
     <MESSAGE value="testing 13th About responsive" />
     <MESSAGE value="testing 1 Project section" />
     <MESSAGE value="testing 1 Assignment section" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 1 Assignment section" />
+    <MESSAGE value="color check" />
+    <option name="LAST_COMMIT_MESSAGE" value="color check" />
   </component>
 </project>

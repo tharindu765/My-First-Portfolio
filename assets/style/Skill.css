@@ -1,0 +1,52 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color of the page */
+}
+
+/* Skill Section Styling */
+#skills-section {
+    padding: 50px 0;
+    background-color: #10131f; /* Background color for the skills section */
+    text-align: center;
+}
+
+.skills-main {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+}
+
+.skills-header {
+    margin-bottom: 30px;
+}
+
+.skills-title {
+     font-size: 2.5rem;
+    color: white; /* Dark text color for the heading */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Skill Icon Styling */
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 100px; /* Space between icons */
+    flex-wrap: wrap; /* Ensure the icons wrap if the screen is narrow */
+}
+
+.skill-icon {
+    width: 25px; /* Width of each icon */
+    height: 25px; /* Height of each icon */
+    border-radius: 50%; /* Make icons round */
+    background-color: black; /* Placeholder background color for icons */
+    display: inline-block;
+    object-fit: cover; /* Ensures the image fits properly in the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effects */
+.skill-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}

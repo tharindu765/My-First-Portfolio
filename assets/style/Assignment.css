@@ -11,6 +11,7 @@
 }
 
 .assignment-header h1 {
+font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -20,16 +21,16 @@
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent line breaks */
     padding: 10px; /* Padding around the container */
-    border: 2px solid red; /* Border around the rectangle */
+    border: 2px solid white; /* Border around the rectangle */
     border-radius: 10px; /* Rounded corners */
     background-color: black; /* Background for the rectangle */
-    width: 50vw;
+    width: 84vw;
     gap: 20px;
 }
 
 /* Individual assignment card styling */
 .assignment-card {
-    background-color:       #f8f9fa; /* Card background color */
+    background-color:#948fc5; /* Card background color */
     border: 1px solid #ddd; /* Light border for cards */
     padding: 15px;
     color:black;
