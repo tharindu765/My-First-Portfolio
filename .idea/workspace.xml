@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 12th About responsive">
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 13th About responsive">
+      <change afterPath="$PROJECT_DIR$/assets/style/Project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/about1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/about1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729060814589</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="testing 13th About responsive">
+      <option name="closed" value="true" />
+      <created>1729061421403</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729061421403</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +234,7 @@
     <MESSAGE value="testing 10th design" />
     <MESSAGE value="testing 11th design" />
     <MESSAGE value="testing 12th About responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 12th About responsive" />
+    <MESSAGE value="testing 13th About responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing 13th About responsive" />
   </component>
 </project>

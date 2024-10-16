@@ -86,23 +86,23 @@
     width: 10px;
   }
 }
-/*min=methana idan udata*/
-@media all and (min-width: 324px) and (max-width: 375px) {
+
+@media all and (min-width: 376px) and (max-width: 424px) {
   #aboutSection .image-container img {
-    width: 30vw !important;
+    width: 30vw;
   }
   #aboutSection .social-container img {
-    width: 10px !important;
+    width: 10px;
   }
 }
 
 
 @media all and (min-width: 321px) and (max-width: 374px) {
   #aboutSection .image-container img {
-    width: 30vw !important;
+    width: 30vw;
   }
 
   #aboutSection .social-container img {
-    width: 10px !important;
+    width: 10px;
   }
 }
