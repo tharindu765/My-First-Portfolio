@@ -1,17 +1,19 @@
 /* General Styling */
 body {
-height:auto;
+    height: auto;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 /* Contact Section */
 #contact-section {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #10131f; /* Match your new background */
+    overflow-y: hidden;
 }
 
 .contact-main {
@@ -25,7 +27,7 @@ height:auto;
 }
 
 .contact-title {
-     font-size: 2.5rem;
+    font-size: 2.5rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -82,16 +84,28 @@ height:auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     margin-bottom: 55px;
-    width: 84vw;
+    height: auto;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit section width */
+    margin: 0 auto; /* Center the section */
+    flex-wrap: wrap; /* Allow flex items to wrap for smaller screens */
+}
+
+.contact-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    max-width: 100%; /* Ensure the image stays within bounds */
+    width: auto; /* Allow width to adjust naturally */
+    height: auto; /* Maintain aspect ratio */
+
+    padding-right: 20px; /* Space between image and text */
 }
 
 .contact-image img {
-    max-width: 400px;
-    width: 8vw;
-    margin-bottom: 30px;
+    max-width: 10vw;
+    height: auto; /* Ensure the image scales while keeping the original size */
     border-radius: 8px;
+
 }
 
 .contact-description {
@@ -110,12 +124,14 @@ height:auto;
 .contact-social-icons {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 60px; /* Reduce gap for better fitting */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 0 0; /* Space above and below */
 }
 
 .social-icon {
-    width: 1vw;
-    height: 1vw;
+    width: 15x; /* Set a fixed size for better consistency */
+    height: 15px;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
@@ -149,13 +165,17 @@ height:auto;
         height: 10px;
     }
 
-.contact-image img {
-   display:none;
-   }
+    .contact-details-section {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    .contact-image img {
+       display:hidden; /* Scale image down for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
-
     .form-button {
         padding: 7px 12px;
     }
@@ -165,7 +185,12 @@ height:auto;
         height: 10px;
     }
 
-.contact-image img {
-   display:none;
-   }
+    .contact-image img {
+        display: none; /* Hide image on very small screens */
+    }
+
+    .contact-details-section {
+        flex-direction: column;
+        align-items: center;
+    }
 }

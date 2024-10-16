@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="contact done">
-      <change afterPath="$PROJECT_DIR$/assets/style/sideBar.css" afterDir="false" />
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="side bar done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729089730692</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="side bar done">
+      <option name="closed" value="true" />
+      <created>1729091024495</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729091024558</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +287,7 @@
     <MESSAGE value="color check" />
     <MESSAGE value="skill done" />
     <MESSAGE value="contact done" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact done" />
+    <MESSAGE value="side bar done" />
+    <option name="LAST_COMMIT_MESSAGE" value="side bar done" />
   </component>
 </project>
