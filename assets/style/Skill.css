@@ -36,8 +36,8 @@ body {
 }
 
 .skill-icon {
-    width: 25px; /* Width of each icon */
-    height: 25px; /* Height of each icon */
+    width: 2vw; /* Width of each icon */
+    height: 2vw; /* Height of each icon */
     border-radius: 50%; /* Make icons round */
     background-color: black; /* Placeholder background color for icons */
     display: inline-block;
@@ -49,4 +49,10 @@ body {
 .skill-icon:hover {
     transform: scale(1.1); /* Slight zoom on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+@media all and (max-width:320px){
+.skills-icons {
+    gap: 40px; /* Space between icons */
+}
 }

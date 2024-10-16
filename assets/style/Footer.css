@@ -1,0 +1,41 @@
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Spacing for the footer */
+    text-align: center; /* Center align content */
+    font-size: 14px; /* Standard footer text size */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h5 {
+    margin: 0; /* Remove margin from the h5 */
+    font-size: 14px; /* Set a smaller font size */
+    color: white; /* Ensure text is white */
+    font-weight: normal; /* Normal font weight */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px; /* Reduce font size on smaller screens */
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    .footer h5 {
+        font-size: 12px; /* Match the font size to the footer */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 10px; /* Further reduce font size on mobile */
+        padding: 10px 0; /* Reduce padding for mobile */
+    }
+
+    .footer h5 {
+        font-size: 10px; /* Adjust font size */
+    }
+}
