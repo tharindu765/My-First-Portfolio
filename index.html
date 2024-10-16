@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/style/Skill.css">
     <link rel="stylesheet" href="assets/style/contact.css">
     <link rel="stylesheet" href="assets/style/Footer.css">
+    <link rel="stylesheet" href="assets/style/sideBar.css">
     <title>kirito</title>
 </head>
 <style>
@@ -478,6 +479,19 @@
     </div>
 </div>
 
+<!-- Hamburger Menu for Small Screens -->
+<div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+<!-- Sidebar Navigation for Small Screens -->
+<div class="sidebar" id="sidebar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Project</a>
+    <a href="#">Assignment</a>
+    <a href="#">Skill</a>
+    <a href="#">Contact</a>
+</div>
+
 <!-- Add GSAP and ScrollTrigger CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -509,6 +523,10 @@
     });
 });
 
+     function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
 </script>
 </body>
 </html>

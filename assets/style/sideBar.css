@@ -1,0 +1,54 @@
+/* General sidebar styles for small screens */
+.sidebar {
+    position: fixed; /* Fixed position */
+    top: 0; /* Align it to the top of the screen */
+    left: -250px; /* Start hidden off the screen */
+    width: 250px; /* Sidebar width */
+    height: 100%; /* Full height */
+    background-color: #333; /* Dark background */
+    transition: left 0.3s ease; /* Smooth slide-in/out animation */
+    z-index: 1000; /* Bring it on top of other content */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar a:hover {
+    color: #ff9800; /* Highlight on hover */
+}
+
+/* Sidebar active state (when visible) */
+.sidebar.active {
+    left: 0; /* Slide into view */
+}
+
+/* Hamburger menu icon (hidden on larger screens) */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+    color: white;
+}
+
+/* Show the hamburger on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .main-nav {
+        display: none; /* Hide regular navigation on small screens */
+    }
+}
