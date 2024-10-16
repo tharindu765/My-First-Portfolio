@@ -1,0 +1,108 @@
+
+/* ABOUT SECTION (Specific to About Section) */
+#aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background: black url('assets/images/backgroundForAboutPage3.jpg') no-repeat center center / cover;
+  height: auto;
+}
+
+#aboutSection .header-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#aboutSection .image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#aboutSection .image-container img {
+  width: 1vw;
+  height: auto;
+  box-shadow: 0 8px 10px red;
+  border-radius: 50%;
+}
+
+#aboutSection .description-container {
+  text-align: center;
+  border: 2px solid red;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 20px red;
+}
+
+#aboutSection .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#aboutSection .button-container button {
+  padding: 10px 15px;
+  color: blue;
+  font-weight: bold;
+  border: 1px solid cyan;
+}
+
+#aboutSection .social-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#aboutSection .social-container img {
+  width: 10px;
+  height: auto;
+}
+
+/* Responsive Adjustments for About Section */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #aboutSection .image-container img {
+    width: 15vw;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px) {
+  #aboutSection .image-container img {
+    width: 30vw;
+  }
+
+  #aboutSection .button-container {
+    flex-direction: column;
+  }
+
+  #aboutSection .button-container button {
+    width: 100%;
+  }
+
+  #aboutSection .social-container img {
+    width: 10px;
+  }
+}
+/*min=methana idan udata*/
+@media all and (min-width: 324px) and (max-width: 375px) {
+  #aboutSection .image-container img {
+    width: 30vw !important;
+  }
+  #aboutSection .social-container img {
+    width: 10px !important;
+  }
+}
+
+
+@media all and (min-width: 321px) and (max-width: 374px) {
+  #aboutSection .image-container img {
+    width: 30vw !important;
+  }
+
+  #aboutSection .social-container img {
+    width: 10px !important;
+  }
+}

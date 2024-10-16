@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="KIRITO">
+    <meta name="description" content="hello this is my first portfolio website">
+    <meta name="keywords" content="portfolio,developers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>kirito</title>
+    <style>
+
+        body{
+        background:black;
+        color:white;
+        overflow-x:hidden;
+        }
+
+        header{
+        position:absoulte;
+        weight:20pw;
+        height:100vh;
+        display: flex;
+        }
+
+        #headerLine{
+        border-radius:30px;
+            border:2px solid blue;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            }
+
+             nav a {
+                  margin: 0 10px;
+                  text-decoration: none;
+                  color:white;
+              }
+
+
+            #introduction{
+            position:absolute;
+            top:180px;
+            }
+
+            #heroImage{
+            }
+
+            #AboutMeDescription{
+            transform:translate(200px,-380px);
+            text-align:center;
+            }
+
+            #aboutImage{
+            transform:translate(100px,0);
+            }
+
+            #bottom{
+            transform:translate(750px,-350px);
+            }
+
+
+             .footer {
+             border:2px solid blue;
+                background-color:black;
+                color: white;
+                text-align: center;© 2024 Tharindu Randika
+                padding: 20px 0;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            .footer-content h5 {
+                margin: 0;
+                font-size: 1rem;
+                opacity: 0.7;
+            }
+
+
+@media (max-width: 575.98px) {
+        body{
+        overflow-x:hidden;
+
+        }
+
+
+    #AboutMeDescription {
+        transform: none;
+    padding: 10px;
+    margin: 0 auto;
+    }
+
+ #bendSocial {
+            padding: 10px;
+            transform: translate(40px, 0px);
+        }
+
+
+   #Education{
+        box-shadow: 0 8px 20px cyan;
+       width: 82vw;
+    height: auto;
+    transform: translate(18px, 0px);
+
+    }
+
+    .footer-content h5 {
+        font-size: 0.8rem;
+    }
+
+    nav a {
+        display:none;
+    }
+
+    #headerLine {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #myJourny{
+        display:none;
+        }
+
+    #bottom>button {
+       transform: translate(-742px, 340px);
+         width: 43vw;
+          font-size: 0.7rem;
+          height:5vh;
+       }
+
+    #imageSize{
+    width:280px;
+    transform: translate(-80px, 0px);
+    }
+
+}
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+        #aboutSection{
+
+        }
+
+        #myJourny{
+        display:none;
+        }
+
+        #AboutMeDescription {
+            transform: translate(0px, 0px);
+        }
+
+        #bottom {
+            transform: translate(120px, 0px);
+        }
+
+            #bendSocial{
+            padding: 10px;
+            transform: translate(170px, 0px);
+        }
+
+   #Education{
+        box-shadow: 0 8px 20px cyan;
+        width:40vw;
+        height:auto;
+        transform: translate(170px, 0px);
+    }
+
+        nav a {
+            margin: 0 8px;
+        }
+
+        .footer-content h5 {
+            font-size: 0.85rem;
+        }
+    }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #AboutMeDescription {
+        transform: translate(150px, -350px);
+        font-size: 0.7rem;
+    }
+
+    #bottom>button {
+        transform: translate(-380px, 0px);
+          width:20vw;
+          font-size: 0.7rem;
+          height:5vh;
+       }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .footer-content h5 {
+        font-size: 0.9rem;
+    }
+
+   #Education{
+        box-shadow: 0 8px 20px cyan;
+        width:40vw;
+        height:auto;
+        font-size: 0.7rem;
+        transform: translate(380px, -470px);
+    }
+
+    #aboutImage{
+        transform: translate(20px, 0px);
+    }
+
+    #imageSize{
+    width:280px;
+    }
+
+    #bendSocial{
+            padding: 10px;
+            transform: translate(50px, 0px);
+        }
+
+}
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+    #AboutMeDescription {
+        transform: translate(150px, -400px);
+    }
+
+    #bottom {
+        transform: translate(550px, -400px);
+    }
+
+    .footer-content h5 {
+        font-size: 1rem;
+    }
+
+     #Education{
+        box-shadow: 0 8px 20px cyan;
+        width:40vw;
+        transform: translate(490px, -500px);
+    }
+
+    #aboutImage{
+        transform: translate(30px, 0px);
+    }
+
+  #bendSocial {
+            padding: 10px;
+            transform: translate(100px, 0px);
+        }
+}
+
+        @media (min-width: 1200px) {
+    #AboutMeDescription {
+        transform: translate(200px, -450px);
+    }
+
+    #bottom {
+        transform: translate(700px, -450px);
+    }
+
+  #bendSocial {
+            padding: 10px;
+            transform: translate(120px, 0px);
+        }
+
+
+        #bendSocial img {
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+
+        #bendSocial img:hover {
+            transform: rotate(-0deg) scale(1.2);
+        }
+
+    #Education{
+        box-shadow: 0 8px 20px cyan;
+        width:40vw;
+        transform: translate(600px, -500px);
+    }
+
+
+    .footer-content h5 {
+        font-size: 1.1rem;
+    }
+}
+
+        /* From Uiverse.io by 212004ALJI */
+button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+<!--Hero Header Section -->
+
+<div id="headerLine">
+    <!-- Logo Section -->
+    <div id="logo">
+        <img src="assets/images/logo.png" alt="Logo" title="logo" style="width: 125px; height: auto; max-width: 100%;">
+    </div>
+
+    <!-- Nav Section -->
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Project</a>
+        <a href="">Skill</a>
+        <a href="">Contact</a>
+    </nav>
+</div>
+
+<header>
+    <!-- Home Section -->
+    <div>
+        <!-- Introduction Section -->
+        <div id="introduction" >
+            <h1 >I am Tharindu randika</h1>
+            <h2 class="animate__animated animate__flip">Software Engineer students - Full stack developer</h2>
+        </div>
+        <!-- Hero Section Image -->
+        <div id="heroImage">
+
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<main id="aboutSection">
+    <!-- About Section Header -->
+    <div>
+        <h1>About</h1>
+    </div>
+    <!-- About Section Image -->
+    <div id="imageSize">
+        <img id="aboutImage" src="assets/images/AboutSectionImage%23.jpeg" alt="Myself" title="myself" style="width: 350px; height: auto; max-width: 100%;  box-shadow: 0 8px 20px cyan; border-radius:100%;">
+    </div>
+    <!-- About Section Social Icon -->
+    <div id="bendSocial">
+        <img src="assets/images/instergram.png" alt="instagram" title="instagram" style="width: 50px; height: auto; max-width: 100%;">
+        <img src="assets/images/facebook.png" alt="FaceBook" title="facebook" style="width: 50px; height: auto; max-width: 100%;">
+        <img src="assets/images/gitgub.png" alt="github" title="github" style="width: 50px; height: auto; max-width: 100%;">
+        <img src="assets/images/whatsapp.png" alt="whatsapp" title="whatsapp" style="width: 50px; height: auto; max-width: 100%;">
+    </div>
+
+    <!-- About Section Detail -->
+    <div id="AboutMeDescription" >
+        <p>Hi, I’m Tharindu Randika,<br> an undergraduate Software Engineer <br>passionate about technology, innovation, and solving complex problems.</p>
+    </div>
+    <!-- About Section Button -->
+    <div id="bottom">
+        <button style="color:blue; front-weight:bold; border:1px solid cyan">My CV</button>
+        <button style="color:blue; front-weight:bold; border:1px solid cyan">Hire Me</button>
+    </div>
+
+    <!-- About Section More Detail -->
+    <div id="myJourny">
+        <h2>My Journey</h2>
+        <div >
+            <p>My journey in software engineering began with a fascination for how things work behind the scenes in the digital world. This curiosity drove me to delve into various programming languages and frameworks, and I've since developed a diverse skill set in software development.</p>
+        </div>
+    </div>
+
+    <div id="Education">
+        <h3>My Education</h3>
+        <ul>
+            <li>Completed Ordinary Level (O/L) at Bolossagama Maha Vidyalaya</li>
+            <li>Completed Advanced Level (A/L) at Ganodaya Maha Vidyalaya</li>
+            <li>Currently pursuing the GDSE program in Software Engineering at IJSE</li>
+        </ul>
+    </div>
+
+</main>
+
+<!-- Project Section -->
+<main>
+    <!-- Project Section Header -->
+    <div>
+        <h1>Project</h1>
+    </div>
+    <!-- Project Section Cards -->
+    <section>
+
+        <!-- Card 1 -->
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<!-- Skill Section -->
+<main>
+    <div>
+        <h1>Skill</h1>
+    </div>
+    <div>
+        <img src="" alt="Github">
+        <img src="" alt="HTML">
+        <img src="" alt="MySQl">
+        <img src="" alt="Java">
+        <img src="" alt="Python">
+        <img src="" alt="Figma">
+        <img src="" alt="Git">
+    </div>
+</main>
+
+
+<!-- Assignment Section -->
+<main>
+    <div>
+        <h1>Assignment</h1>
+    </div>
+    <!-- Assignment 1-->
+    <section>
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+                <button>Github</button>
+            </div>
+        </div>
+    </section>
+    <!-- Assignment 2-->
+    <section>
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+                <button>Github</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignment 3-->
+    <section>
+        <div>
+            <!-- Card title -->
+            <div>
+                <h3>Title</h3>
+            </div>
+            <!-- Card Description -->
+            <div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem, omnis! Ad, aut, corporis ea earum error expedita fugiat incidunt inventore itaque labore libero minus necessitatibus nesciunt quis, repudiandae voluptates.</h5>
+            </div>
+            <!-- Card Button -->
+            <div>
+                <button>View</button>
+                <button>Github</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Contact Me Section -->
+<main>
+    <div>
+        <h1>Contact Me</h1>
+    </div>
+    <!-- Contact Me Form Detail Section -->
+    <section>
+        <form>
+            <label for="Name">Full Name</label><br>
+            <input type="text" id="Name"><br>
+            <label for="Address">Email Address</label><br>
+            <input type="text" id="Address"><br>
+            <label for="Description"></label>Description<br>
+            <input type="text" id="Description"><br>
+            <button>Submit</button>
+            <button>Clear</button>
+        </form>
+    </section>
+
+    <!-- Contact Me Section Image -->
+    <section>
+        <div>
+            <img src="assets/images/ContactMeSectionImage.png" alt="MYImage" title="Image">
+        </div>
+        <div>
+            <p>Thank you for visiting my portfolio. I am passionate about software engineering and always eager to take on new challenges. Please feel free to reach out for collaborations, opportunities, or just to connect. </p>
+        </div>
+    </section>
+
+    <!-- Contact Me Section Social Icon -->
+    <div>
+        <img src="" alt="instagram" title="instagram">
+        <img src="" alt="FaceBook" title="facebook">
+        <img src="" alt="Github" title="github">
+        <img src="" alt="Whatsapp" title="whatsapp">
+    </div>
+
+</main>
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Footer Section CopyRight -->
+    <div class="footer-content">
+        <h5>&copy; 2024 My Portfolio. All Rights Reserved.</h5>
+    </div>
+</footer>
+
+<!--AOS PLUG-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--AOS INIT-->
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
