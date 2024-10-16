@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 8th design" />
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="testing 9th design" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729059134228</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="testing 9th design">
+      <option name="closed" value="true" />
+      <created>1729059471742</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729059471742</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +193,7 @@
     <MESSAGE value="testing 6th design" />
     <MESSAGE value="testing 7th design" />
     <MESSAGE value="testing 8th design" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 8th design" />
+    <MESSAGE value="testing 9th design" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing 9th design" />
   </component>
 </project>
