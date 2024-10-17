@@ -18,111 +18,6 @@
     <title>kirito</title>
 </head>
 <style>
-    /* =================================
-    Media Queries
-    ==================================== */
-
-    /* Base styles for mobile devices (default) */
-    body {
-        /* Default styles here */
-    }
-
-    /* Media query for small phones (up to 320px) */
-    @media all and (max-width: 320px) {
-
-        .header {
-            flex-direction: column; /* Stacked layout */
-            align-items: center; /* Center align */
-        }
-
-        .image-container {
-            display:flex;
-            justify-content:center;
-            width:100%;
-            height: 100vh; /* Full height */
-        }
-
-        .image-container img {
-            width:70vw;
-            height: 70vw; /* Full height */
-        }
-
-        .main-nav a {
-            display: none; /* Show navigation links */
-        }
-    }
-
-    /* Media query for medium phones (321px to 480px) */
-    @media all and (min-width: 321px) and (max-width: 480px) {
-        .header {
-            flex-direction: column; /* Stacked layout */
-            align-items: center; /* Center align */
-        }
-
-        .image-container img {
-            width:70vw;
-            height: 70vw; /* Full height */
-        }
-
-        .main-nav a {
-                    display: none; /* Show navigation links */
-        }
-    }
-
-    /* Media query for large phones (481px to 768px) */
-    @media all and (min-width: 481px) and (max-width: 768px) {
-        .header {
-            flex-direction: column; /* Stacked layout */
-            align-items: center; /* Center align */
-        }
-
-        .image-container img {
-            width:70vw;
-            height: 70vw; /* Full height */
-        }
-
-        .main-nav a {
-            display: none; /* Show navigation links */
-        }
-    }
-
-    /* Media query for tablets (769px to 1024px) */
-    @media all and (min-width: 769px) and (max-width: 1024px) {
-        .header {
-            flex-direction: column; /* Stack on smaller tablets */
-            align-items: center; /* Center align */
-        }
-
-        .image-container img {
-             width:40vw;
-             height: 40vw; /* Full height */
-        }
-
-        .main-nav a {
-            display: none; /* Show navigation links */
-        }
-   }
-
-        /* Media query for desktops (1025px and above) */
-        @media all and (min-width: 1025px) {
-            .header {
-                display: flex; /* Ensure header is a flex container */
-                flex-direction: row; /* Row layout for header */
-                justify-content: space-between; /* Space between header elements */
-                align-items: center; /* Align items vertically */
-            }
-
-            .main-nav {
-                display: flex; /* Ensure nav is a flex container */
-                justify-content: flex-end; /* Align nav items to the right */
-            }
-
-            .main-nav a {
-                margin-left: 20px; /* Optional: space between nav links */
-            }
-
-        }
-
 
 </style>
 <body>
@@ -159,7 +54,7 @@
         <!--hero section-->
         <section class="section hero" id="hero"></section>
         <!--About section-->
-        <section id="aboutSection1" class="section gradient-purple" style="background:#10131f; color:white; padding: 20px; height:auto;">
+        <section id="aboutSection1" class="section gradient-purple" style="background:#D90429; color:white; padding: 20px; height:auto;">
             <main id="aboutSection" class="grid-container">
                 <!-- About Section Header -->
                 <div class="header-container">
@@ -260,16 +155,16 @@
                         <div>
                             <!-- Card title -->
                             <div class="card-title">
-                                <h3>Assignment Title 1</h3>
+                                <h3>Case 1</h3>
                             </div>
                             <!-- Card Description -->
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Slide-out menu with hover animation, blue background."</h5>
                             </div>
                             <!-- Card Button -->
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_1.html"><button> View</button></a>
+                                <a href="https://github.com/tharindu765/IT_Assignment_04/blob/main/case%201.html"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -277,14 +172,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 2</h3>
+                                <h3>Case 2</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Centered circular div expands on hover, blue border."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_2.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/IT_Assignment_04/blob/main/case_2.html"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -292,14 +187,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 3</h3>
+                                <h3>Case 3</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Four colored sections with circles and centered squares."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_3.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -307,14 +202,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 4</h3>
+                                <h3>Case 4</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Full-screen sections with sticky headers and large text."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_4.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -322,14 +217,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 5</h3>
+                                <h3>Case 5</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Sticky header, sidebar navigation, content with animated sections."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_5.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -337,14 +232,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 6</h3>
+                                <h3>Case 6</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Grid layout with colorful bordered divs on pink background."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/Case_6.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -352,14 +247,14 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 7</h3>
+                                <h3>Case 7</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Grid layout with varied column spans and colorful divs."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/case_7.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
@@ -367,17 +262,48 @@
                     <section class="assignment-card">
                         <div>
                             <div class="card-title">
-                                <h3>Assignment Title 8</h3>
+                                <h3>Case 8</h3>
                             </div>
                             <div class="card-description">
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                <h5>"Centered concentric circles with text and colorful backgrounds."</h5>
                             </div>
                             <div class="card-buttons">
-                                <button>View</button>
-                                <button>Github</button>
+                                <a href="assets/Assignments/Case_8.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
                             </div>
                         </div>
                     </section>
+                    <!-- Assignment 9-->
+                    <section class="assignment-card">
+                        <div>
+                            <div class="card-title">
+                                <h3>Case 9</h3>
+                            </div>
+                            <div class="card-description">
+                                <h5>"Animated sliding images with flexbox layout in center."</h5>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="assets/Assignments/case_9.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/Internet_Technology-Assignment_3.git"><button>Github</button></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Assignment 10-->
+                    <section class="assignment-card">
+                        <div>
+                            <div class="card-title">
+                                <h3>Case 10</h3>
+                            </div>
+                            <div class="card-description">
+                                <h5>"Car animation with moving road and background city."</h5>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="assets/Assignments/case_10.html"><button>View</button></a>
+                                <a href="https://github.com/tharindu765/IT_Assignment_04/blob/main/index.html"><button>Github</button></a>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </main>
         </section>

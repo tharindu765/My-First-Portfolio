@@ -81,3 +81,108 @@
             .main-nav a:hover {
                 color: #718daa;
             }
+  /* =================================
+    Media Queries
+    ==================================== */
+
+    /* Base styles for mobile devices (default) */
+    body {
+        /* Default styles here */
+    }
+
+    /* Media query for small phones (up to 320px) */
+    @media all and (max-width: 320px) {
+
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container {
+            display:flex;
+            justify-content:center;
+            width:100%;
+            height: 100vh; /* Full height */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for medium phones (321px to 480px) */
+    @media all and (min-width: 321px) and (max-width: 480px) {
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+                    display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for large phones (481px to 768px) */
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        .header {
+            flex-direction: column; /* Stacked layout */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+            width:70vw;
+            height: 70vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
+    }
+
+    /* Media query for tablets (769px to 1024px) */
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+        .header {
+            flex-direction: column; /* Stack on smaller tablets */
+            align-items: center; /* Center align */
+        }
+
+        .image-container img {
+             width:40vw;
+             height: 40vw; /* Full height */
+        }
+
+        .main-nav a {
+            display: none; /* Show navigation links */
+        }
+   }
+
+        /* Media query for desktops (1025px and above) */
+        @media all and (min-width: 1025px) {
+            .header {
+                display: flex; /* Ensure header is a flex container */
+                flex-direction: row; /* Row layout for header */
+                justify-content: space-between; /* Space between header elements */
+                align-items: center; /* Align items vertically */
+            }
+
+            .main-nav {
+                display: flex; /* Ensure nav is a flex container */
+                justify-content: flex-end; /* Align nav items to the right */
+            }
+
+            .main-nav a {
+                margin-left: 20px; /* Optional: space between nav links */
+            }
+
+        }
+

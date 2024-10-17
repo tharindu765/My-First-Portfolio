@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    color:white;
+    color: white;
 }
 
 .assignment-content {
@@ -11,7 +11,7 @@
 }
 
 .assignment-header h1 {
-font-size: 2.5rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -30,10 +30,10 @@ font-size: 2.5rem;
 
 /* Individual assignment card styling */
 .assignment-card {
-    background-color:#948fc5; /* Card background color */
+    background-color: #948fc5; /* Card background color */
     border: 1px solid #ddd; /* Light border for cards */
     padding: 15px;
-    color:black;
+    color: black;
     margin-right: 10px; /* Space between cards */
     min-width: 200px; /* Minimum width for cards */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
@@ -43,6 +43,13 @@ font-size: 2.5rem;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
     justify-content: space-between; /* Space out content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect for assignment cards */
+.assignment-card:hover {
+    transform: translateY(-5px); /* Move the card up by 5px */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
 }
 
 /* Card title styling */
