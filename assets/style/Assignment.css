@@ -30,10 +30,10 @@
 
 /* Individual assignment card styling */
 .assignment-card {
-    background-color: #948fc5; /* Card background color */
+    background-color: #0F0F0F; /* Card background color */
     border: 1px solid #ddd; /* Light border for cards */
     padding: 15px;
-    color: black;
+    color: white;
     margin-right: 10px; /* Space between cards */
     min-width: 200px; /* Minimum width for cards */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
@@ -50,6 +50,7 @@
 .assignment-card:hover {
     transform: translateY(-5px); /* Move the card up by 5px */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
+    box-shadow: 10px 10px 20px white;
 }
 
 /* Card title styling */
@@ -81,7 +82,8 @@
 button {
     padding: 8px 12px; /* Padding for buttons */
     font-size: 0.9rem; /* Button font size */
-    background-color: #007bff; /* Button background */
+    background-color: transparent; /* Button background */
+    border:1px solid white !important;
     color: white; /* Button text color */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners for buttons */
@@ -90,7 +92,7 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: red; /* Darker color on hover */
 }
 
 /* Responsive adjustments */
