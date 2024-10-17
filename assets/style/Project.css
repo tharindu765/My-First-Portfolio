@@ -9,6 +9,16 @@
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
+<div class="loader-container" id="loader">
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+
 }
 
 /* Grid Layout for Project Cards */
@@ -21,10 +31,10 @@
 
 /* Project Card Styling */
 .section.gradient-blue main section div {
-  background-color: #948fc5; /* Card background color */
+  background-color: black; /* Card background color */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px red;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -48,7 +58,7 @@
 /* View Button Styling */
 .section.gradient-blue main section div button {
   padding: 10px 15px;
-  background-color: #1c78c0;
+  background-color: red;
   border: none;
   border-radius: 5px;
   color: white;
@@ -58,7 +68,8 @@
 }
 
 .section.gradient-blue main section div button:hover {
-  background-color: #145a91;
+  border:1px solid red;
+  background: transparent;
 }
 
 /* Responsive adjustments */

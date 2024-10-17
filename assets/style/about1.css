@@ -7,8 +7,15 @@
   justify-content: center;
   padding: 20px;
   color: white;
-  background: #EF233C url('assets/images/backgroundForAboutPage3.jpg') no-repeat center center / cover;
+  background: white url('assets/images/backgroundForAboutPage3.jpg') no-repeat center center / cover;
   height: auto;
+  border:1px solid white;
+  background:transparent;
+
+}
+
+#aboutSection:hover{
+  box-shadow: 10px 10px 20px white;
 }
 
 #aboutSection .header-container {
@@ -37,6 +44,7 @@ font-size: 2.5rem;
 #aboutSection .description-container {
   text-align: center;
   border: 2px solid red;
+  background:black;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 10px 10px 20px red;

@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="side bar update done">
-      <change afterPath="$PROJECT_DIR$/assets/Assignments/case_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Assignments/case_2.html" afterDir="false" />
+    <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="color maching">
+      <change afterPath="$PROJECT_DIR$/assets/images/red-facebook-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/red-github-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/red-instagram-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/red-whatsapp-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/PreLoader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style/button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/Assignment.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Assignment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/about1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/about1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729099406544</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="color maching">
+      <option name="closed" value="true" />
+      <created>1729164707241</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729164707241</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +312,7 @@
     <MESSAGE value="contact done" />
     <MESSAGE value="side bar done" />
     <MESSAGE value="side bar update done" />
-    <option name="LAST_COMMIT_MESSAGE" value="side bar update done" />
+    <MESSAGE value="color maching" />
+    <option name="LAST_COMMIT_MESSAGE" value="color maching" />
   </component>
 </project>
