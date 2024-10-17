@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-9</title>
+
+    <style>
+
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        section{
+          display: flex;
+          width: fit-content;
+          height: 80vh;
+          animation: am 5s  infinite ;
+        }
+
+        main{
+          width: 50vw;
+          height: 80vh;
+          margin: auto;
+          overflow: hidden;
+          border: 10px solid black;
+        }
+
+       section div{
+          width: 50vw;
+          height: 80vh;
+
+        }
+
+        #f{
+          background: url("/../assets/images/case_9_pic.png");
+          background-size: cover;
+          background-position: center;
+
+        }
+
+
+        #s{
+          background: url("/../assets/images/backgroundCheckForAboutPage2.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        #t{
+          background: url("/../assets/images/backgroundForAboutPage3.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        #fo{
+          background: url("/../assets/images/backgroundImageMan.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+
+        @keyframes am {
+
+        0%,20% {
+          transform: translateX(0%);
+        }
+
+          25%,45%{
+            transform: translateX(-25%);
+          }
+
+          50%,70%{
+            transform: translateX(-50%);
+          }
+
+          75%,90%{
+            transform: translateX(-75%);
+          }
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+<main>
+    <section>
+        <div id="f"></div>
+        <div id="s"></div>
+        <div id="t"></div>
+        <div id="fo"></div>
+    </section>
+</main>
+
+</body>
+
+</html>

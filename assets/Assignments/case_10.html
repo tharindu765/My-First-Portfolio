@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+</head>
+
+<style>
+body{
+overflow:hidden;
+background-image: url("/../assets/Car_Animation_Img/sky.jpg");
+
+}
+
+    .main{
+width:100vw;
+height:100vh;
+        position: relative;
+    }
+
+    .road{
+        width: 400%;
+        height: 200px;
+        background-image: url("/../assets/Car_Animation_Img/road.jpg");
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        animation: road 4s linear infinite;
+    }
+
+    @keyframes road {
+        100%{
+            transform: translateX(-2800px);
+        }
+    }
+    .city{
+        height: 250px;
+        width: 300%;
+        background-image: url("/../assets/Car_Animation_Img/city.png");
+        position: absolute;
+        bottom: 200px;
+        z-index: 1;
+        animation: city 8s linear infinite;
+    }
+    @keyframes city {
+        100%{
+            transform: translateX(-1000px);
+        }
+    }
+    .car{
+        width: 300px;
+        height: 200px;
+        left: 650px;
+        bottom: 50px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .car>img{
+        width: 300px;
+        animation: car 2s linear infinite;
+    }
+
+    @keyframes car {
+         100%{
+             transform: translateY(-2px);
+         }
+        50%{
+            transform: translateY(2px);
+        }
+        0%{
+            transform: translateY(-2px);
+        }
+    }
+    .wheel{
+        left: 5%;
+        bottom: 25px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .wheel>img{
+        width: 60px;
+        height: 60px;
+        animation: wheel 1s linear infinite;
+    }
+    #back{
+        top: -162px;
+        left: 455px;
+        position: absolute;
+    }
+    #start{
+        top: -162px;
+        left: 640px;
+        position: absolute;
+    }
+    @keyframes wheel {
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+<body>
+<div class="main">
+    <div class="road"></div>
+    <div class="city"></div>
+    <div class="car">
+        <img src="/../assets/Car_Animation_Img/car.png">
+    </div>
+
+    <div class="wheel">
+        <img src="/../assets/Car_Animation_Img/wheel.png" id="back">
+        <img src="/../assets/Car_Animation_Img/wheel.png" id="start">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <title>case 2</title>
+
+    <style>
+
+        header{
+        border:2px solid black;
+        background:white;
+        height: 100px;
+        position: relative;
+        }
+
+        header>section:nth-child(2){
+        position:absolute;
+        right:10px;
+        top:20px;
+        }
+
+        header>section>ul>li{
+        display:inline;
+        margin: 0px 15px;
+        }
+
+        main{
+            position: relative;
+
+        }
+
+        main>section:first-child{
+        background:purple;
+        width: 20%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        }
+
+        main>section>ul>li{
+        list-style:none;
+        margin: 10px 0px;
+        }
+
+
+        main>section:nth-child(2){
+        margin-left: 20%;
+        }
+
+        main>section:nth-child(2)>p:first-child{
+        margin-top: 0;
+        }
+
+        main>section:nth-child(2)>p:last-child{
+        margin-bottom: 0;
+        }
+
+        footer{
+         background: #524f4f;
+        }
+
+        footer>div{
+            color: white;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+         main>section>section{
+            background:black;
+            position: relative;
+            height: 300px;
+        }
+
+
+         main>section>section>div{
+            background: url("assets/videos/monkey.gif");
+            width: calc(100%/3);
+            height: 300px;
+            position: absolute;
+        }
+
+         main>section>section>div:nth-child(2){
+            right: 0;
+            left: 0;
+            margin: auto;
+            background:white;
+        }
+
+        main>section>section>div:last-child{
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <section>
+        <img src="assets/images/img.png" alt="Logo" width="100px">
+    </section>
+<section>
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</section>
+</header>
+
+<main>
+<section>
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</section>
+    <section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae cum delectus dignissimos eos, expedita, fugit illum magni nobis non perferendis repellendus sed sequi sint temporibus ut voluptatibus. Eius, voluptatem!</p>
+    </section>
+</main>
+
+<footer>
+<div>made in IJSE</div>
+</footer>
+
+</body>
+</html>
