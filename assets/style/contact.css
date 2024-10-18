@@ -36,6 +36,21 @@ body {
 /* Contact Form Styling */
 .contact-form-section {
     margin-bottom: 40px;
+    z-index:100;
+    border:2px solid white;
+    box-shadow: 10px 10px 20px red;
+}
+
+.contact-form-section:hover{
+border:2px solid red;
+    box-shadow: 10px 10px 20px white;
+}
+
+
+.b{
+max-width: 600px;
+display:flex;
+justify-content:center;
 }
 
 .contact-form {
@@ -66,7 +81,7 @@ body {
 }
 
 .form-button {
-    background-color: #007BFF;
+    background-color: red;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -76,11 +91,12 @@ body {
 }
 
 .form-button:hover {
-    background-color: #0056b3;
+    background-color: transparent;
 }
 
 /* Contact Image and Description Section */
 .contact-details-section {
+z-index:10;
     display: flex;
     justify-content: space-around;
     align-items: center;

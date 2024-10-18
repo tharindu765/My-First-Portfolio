@@ -31,24 +31,40 @@ body {
 .skills-icons {
     display: flex;
     justify-content: center; /* Center the icons */
-    gap: 100px; /* Space between icons */
+    gap: 50px; /* Space between icons */
     flex-wrap: wrap; /* Ensure the icons wrap if the screen is narrow */
 }
 
 .skill-icon {
-    width: 2vw; /* Width of each icon */
-    height: 2vw; /* Height of each icon */
+    width: 7vw; /* Width of each icon */
+    height: 7vw; /* Height of each icon */
     border-radius: 50%; /* Make icons round */
     background-color: black; /* Placeholder background color for icons */
     display: inline-block;
     object-fit: cover; /* Ensures the image fits properly in the container */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: floatAndMln 3s ease-in-out infinite; /* Floating animation */
+     box-shadow: 0 4px 10px red; /* Shadow on hover */
 }
 
 /* Add hover effects */
 .skill-icon:hover {
     transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    box-shadow: 0 4px 10px white; /* Shadow on hover */
+}
+
+/* Keyframe Animation for Floating Effect */
+@keyframes floatAndMln {
+    0% {
+        transform: translateY(0);
+
+    }
+    50% {
+        transform: translateY(-8px); /* Move icon upwards */
+    }
+    100% {
+        transform: translateY(0); /* Move back to original position */
+    }
 }
 
 @media all and (max-width:320px){
