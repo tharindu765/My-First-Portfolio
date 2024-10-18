@@ -32,7 +32,6 @@
 
     .main-nav {
         margin-top: 5px;
-
     }
     .logo a,
     .main-nav a {
@@ -49,6 +48,9 @@
 
 
         .header {
+        background: transparent !important;
+        backdrop-filter:blur(16px);
+        color:white;
         position: fixed; /* Fixed positioning */
         top: 0; /* Stick to the top of the viewport */
         width: 100%; /* Occupy the full width of the viewport */
