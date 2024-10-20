@@ -81,6 +81,27 @@
             .main-nav a:hover {
                 color: #718daa;
             }
+
+              @keyframes bloddy {
+                        0% {
+                            transform: scale(1);
+                            color: #fff; /* Initial color */
+                        }
+
+                        50% {
+                            transform: scale(1.2);
+                            color: red; /* Change color to red */
+                        }
+
+                        100% {
+                            transform: scale(1);
+                            color: #fff; /* Return to original color */
+                        }
+                    }
+
+                    .bloddy {
+                        animation: bloddy 1.5s infinite; /* Infinite loop of the animation */
+                    }
   /* =================================
     Media Queries
     ==================================== */

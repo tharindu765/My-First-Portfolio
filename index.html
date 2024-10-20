@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/style/PreLoader.css">
     <link rel="stylesheet" href="assets/style/button.css">
     <title>kirito</title>
+
 </head>
 <style>
 
@@ -343,7 +344,7 @@
 
                 <!-- Contact Form Section -->
                 <section class="contact-form-section">
-                    <form class="contact-form">
+                    <form class="contact-form" id="contactForm">
                         <label for="name" class="form-label">Full Name</label><br>
                         <input type="text" id="name" class="form-input" placeholder="Enter your name"><br>
 
@@ -354,8 +355,8 @@
                         <textarea id="description" class="form-textarea" placeholder="Enter your message"></textarea><br>
 
                         <div class="b">
-                        <button type="submit" class="form-button">Submit</button>
-                        <button type="reset" class="form-button">Clear</button>
+                            <button type="submit" class="form-button">Submit</button>
+                            <button type="reset" class="form-button">Clear</button>
                         </div>
                     </form>
                 </section>
@@ -363,7 +364,7 @@
                 <!-- Contact Image and Description Section -->
                 <section class="contact-details-section">
                     <div class="contact-image">
-                        <img src="assets/images/ContactMeSectionImage.png" alt="MYImage" title="Image">
+                        <img src="assets/images/ContactMeSectionImage.png" alt="MYImage" title="tharindu randika">
                     </div>
                     <div class="contact-description">
                         <p>
@@ -383,20 +384,20 @@
         </section>
         <!-- Footer Section -->
         <section id="Footer-section" style="height:auto;">
-        <footer class="footer">
-            <!-- Footer Section CopyRight -->
-            <div class="footer-content">
-                <h5>&copy; 2024 Portfolio Made by Tharindu Randika All Rights Reserved.</h5>
-            </div>
-        </footer>
-       </section>
+            <footer class="footer">
+                <!-- Footer Section CopyRight -->
+                <div class="footer-content">
+                    <h5>&copy; 2024 Portfolio Made by Tharindu Randika All Rights Reserved.</h5>
+                </div>
+            </footer>
+        </section>
 
     </div>
     <div class="image-container">
         <img src="assets/images/backgroundImageMan.jpg" alt="image">
         <div class="text-overlay">
-            <h1>Hi Welcome</h1>
-            <p>I am Tharindu</p>
+            <h1 class="bloddy">Hi Welcome</h1>
+            <p class="bloddy">I am Tharindu</p>
         </div>
     </div>
 </div>
@@ -408,47 +409,70 @@
 
 <script>
 
-        window.addEventListener("load", () => {
-           gsap.timeline({
-               scrollTrigger: {
-                   trigger: ".wrapper",
-                   start: "top top",
-                   end: "+=100%", // Adjust to control the scroll distance
-                   scrub: true,
-                   pin: ".wrapper",
-               }
-           })
-           .to("img", {
-               scale: 4,
-               ease: "power1.inOut"
-           });
-        });
-
-        window.addEventListener("load", () => {
-        gsap.to("#aboutImage", {
-            y: -20, // Moves the image 20px up
-            duration: 1.5, // 1.5 seconds per animation loop
-            ease: "power1.inOut", // Smooth easing
-            repeat: -1, // Infinite loop
-            yoyo: true // Make the animation reverse
-        });
+    window.addEventListener("load", () => {
+       gsap.timeline({
+           scrollTrigger: {
+               trigger: ".wrapper",
+               start: "top top",
+               end: "+=100%", // Adjust to control the scroll distance
+               scrub: true,
+               pin: ".wrapper",
+           }
+       })
+       .to("img", {
+           scale: 4,
+           ease: "power1.inOut"
+       });
     });
 
-         function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("active");
-        }
+    window.addEventListener("load", () => {
+    gsap.to("#aboutImage", {
+        y: -20, // Moves the image 20px up
+        duration: 1.5, // 1.5 seconds per animation loop
+        ease: "power1.inOut", // Smooth easing
+        repeat: -1, // Infinite loop
+        yoyo: true // Make the animation reverse
+    });
+});
 
-     window.addEventListener("load", function() {
-            const preloader = document.getElementById("preloader");
-            preloader.style.transition = "opacity 0.5s ease-out";
-            preloader.style.opacity = 0;
-            setTimeout(() => {
-                preloader.style.display = "none";
-            }, 500);
-        });
+     function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
+
+ window.addEventListener("load", function() {
+        const preloader = document.getElementById("preloader");
+        preloader.style.transition = "opacity 0.5s ease-out";
+        preloader.style.opacity = 0;
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500);
+    });
 
 
+</script>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Retrieve the form values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("description").value;
+
+      // Compose the email body using template literals and encoding
+      const emailBody = `Hello Tharindu,%0D%0A%0D%0AYou have received a new message from your portfolio contact form.%0D%0A%0D%0A` +
+              `Name: ${encodeURIComponent(name)}%0D%0A` +
+              `Email: ${encodeURIComponent(email)}%0D%0A%0D%0A` +
+              `Message:%0D%0A${encodeURIComponent(message)}%0D%0A`;
+
+      // Open the user's email client with the pre-filled email
+      const mailtoLink = `mailto:tharindurandika25@gmail.com?subject=New%20Message%20from%20${encodeURIComponent(name)}&body=${emailBody}`;
+      window.location.href = mailtoLink;
+
+      // Clear the form fields after sending the email
+      document.getElementById("contactForm").reset();
+    });
 </script>
 </body>
 </html>

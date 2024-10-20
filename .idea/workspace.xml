@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d6cc2b2-9f25-4fe9-b646-299fafbc0d0b" name="Changes" comment="update nav bar color">
+      <change afterPath="$PROJECT_DIR$/assets/php/send_email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/sideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/sideBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/Hero.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
