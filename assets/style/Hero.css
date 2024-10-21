@@ -131,6 +131,10 @@
             height: 70vw; /* Full height */
         }
 
+        .bloddy {
+         animation: none;
+         }
+
         .main-nav a {
             display: none; /* Show navigation links */
         }
@@ -147,6 +151,11 @@
             width:70vw;
             height: 70vw; /* Full height */
         }
+
+
+        .bloddy {
+         animation: none;
+         }
 
         .main-nav a {
                     display: none; /* Show navigation links */
@@ -165,6 +174,10 @@
             height: 70vw; /* Full height */
         }
 
+        .bloddy {
+         animation: none;
+         }
+
         .main-nav a {
             display: none; /* Show navigation links */
         }
@@ -181,7 +194,7 @@
              width:40vw;
              height: 40vw; /* Full height */
         }
-
+        
         .main-nav a {
             display: none; /* Show navigation links */
         }

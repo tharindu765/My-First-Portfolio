@@ -215,3 +215,9 @@ z-index:10;
         text-align:center;
     }
 }
+
+@media (max-width: 425px) {
+    .contact-image img {
+        display: none; /* Hide image on very small screens */
+    }
+}
